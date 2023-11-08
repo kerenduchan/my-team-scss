@@ -1,0 +1,80 @@
+:root {
+    --primary-color-1: white;
+    --primary-color-2: #f67e7e;
+    --primary-color-3: #014e56;
+    --secondary-color-1: #79c8c7;
+    --secondary-color-2: #2c6269;
+    --secondary-color-3: #004047;
+    --secondary-color-4: #012f34;
+    --secondary-color-5: #002529;
+}
+
+.stripes {
+    display: inline-grid;
+    row-gap: 4px;
+}
+
+.stripe {
+    width: 100px;
+    height: 4px;
+}
+
+.bg-secondary-1 {
+    background-color: var(--secondary-color-1);
+}
+
+.bg-secondary-2 {
+    background-color: var(--secondary-color-2);
+}
+
+.border-primary-2 {
+    border-color: var(--primary-color-2);
+}
+
+.border-secondary-4 {
+    border-color: var(--secondary-color-4);
+}
+
+.circle {
+    border-radius: 50%;
+    width: 200px;
+    aspect-ratio: 1 / 1;
+}
+
+.donut {
+    border-radius: 50%;
+    width: 200px;
+    aspect-ratio: 1 / 1;
+    border-width: 67px;
+    border-style: solid;
+    box-sizing: border-box;
+}
+
+.design1 {
+    position: relative;
+    width: 358px;
+}
+
+.design1-item {
+    position: absolute;
+    top: 0;
+}
+
+.design1-item:nth-child(1),
+.design1-item:nth-child(2) {
+    left: 0;
+}
+
+.design1-item:nth-child(3) {
+    right: 0;
+}
+
+.design1-item:nth-child(4) {
+    right: 24px;
+}
+
+.design1-item:nth-child(5) {
+    right: 0;
+    height: 43px;
+    aspect-ratio: 1 / 1;
+}
