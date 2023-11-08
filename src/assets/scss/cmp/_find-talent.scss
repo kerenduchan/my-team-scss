@@ -46,7 +46,6 @@
 
     // desktop
     @media screen and (min-width: $breakpoint-desktop) {
-        display: grid;
         grid-template-columns: var(--margin-desktop) auto 1fr var(
                 --margin-desktop
             );
