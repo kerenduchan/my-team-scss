@@ -1,27 +1,27 @@
-.design1 {
+.graphic1 {
     position: relative;
     width: 358px;
 }
 
-.design1-item {
+.graphic1-item {
     position: absolute;
     top: 0;
 }
 
-.design1-item:nth-child(1),
-.design1-item:nth-child(2) {
+.graphic1-item:nth-child(1),
+.graphic1-item:nth-child(2) {
     left: 0;
 }
 
-.design1-item:nth-child(3) {
+.graphic1-item:nth-child(3) {
     right: 0;
 }
 
-.design1-item:nth-child(4) {
+.graphic1-item:nth-child(4) {
     right: 24px;
 }
 
-.design1-item:nth-child(5) {
+.graphic1-item:nth-child(5) {
     right: 0;
     @include square(43px);
 }

@@ -1,4 +1,4 @@
-import { Design1 } from './Design1'
+import { Graphic1 } from './Graphic1'
 
 export function FindTalent() {
     return (
@@ -12,7 +12,7 @@ export function FindTalent() {
                 be hard. Most companies aren't tapping into the abundance of
                 global talent. We're about to change that.
             </p>
-            <Design1 />
+            <Graphic1 />
         </div>
     )
 }
