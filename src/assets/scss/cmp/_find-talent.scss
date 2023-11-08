@@ -1,0 +1,21 @@
+.find-talent {
+    margin-top: 250px;
+    display: grid;
+    grid-template-columns: 168px auto 168px;
+
+    .content {
+        grid-area: 1 / 2;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+
+        div:nth-child(1) {
+            margin-inline-end: 100px;
+        }
+    }
+
+    .design1 {
+        margin-top: 100px;
+        grid-area: 2 / 2;
+        justify-self: end;
+    }
+}
