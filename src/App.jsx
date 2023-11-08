@@ -4,7 +4,7 @@ import { FindTalent } from './cmp/FindTalent'
 function App() {
     return (
         <>
-            <Header />
+            {/* <Header /> */}
             <FindTalent />
         </>
     )

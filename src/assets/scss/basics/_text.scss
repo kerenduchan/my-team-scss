@@ -6,22 +6,21 @@ body {
     font-size: $size;
     line-height: $line-height;
     font-weight: $weight;
-    margin: 0;
 }
 
-h1 {
+@mixin h1() {
     @include font(100px, 100px);
-
-    .small {
-        @include font(64px, 56px);
-    }
 }
 
-h2 {
+@mixin h1-small() {
+    @include font(64px, 56px);
+}
+
+@mixin h2() {
     @include font(48px, 48px);
 }
 
-h3 {
+@mixin h3() {
     @include font(18px, 28px);
 }
 
@@ -35,4 +34,20 @@ h3 {
 
 .body-1 {
     @include body-1();
+}
+
+h1 {
+    @include h1();
+
+    .small {
+        @include h1-small();
+    }
+}
+
+h2 {
+    @include h2();
+}
+
+h3 {
+    @include h3();
 }

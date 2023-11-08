@@ -12,7 +12,10 @@
     // font
     --font: 'Livvic';
 
-    // font weight
-    --bold: 700;
-    --semi-bold: 600;
+    --margin-mobile: 24px;
+    --margin-tablet: 97px;
+    --margin-desktop: 0px;
 }
+
+$breakpoint-tablet: 376px;
+$breakpoint-desktop: 769px;
