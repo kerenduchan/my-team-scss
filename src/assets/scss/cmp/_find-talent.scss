@@ -24,6 +24,10 @@
         margin-top: 97px;
     }
 
+    .graphic2 {
+        display: none;
+    }
+
     // tablet
     @media screen and (min-width: $breakpoint-tablet) {
         grid-template-columns: 40px 1fr 40px;
@@ -69,6 +73,14 @@
             margin: 0px;
             margin-top: 100px;
             justify-self: end;
+        }
+
+        .graphic2 {
+            position: relative;
+            align-self: start;
+            left: -50%;
+            display: grid;
+            grid-area: 1 / 1;
         }
     }
 }

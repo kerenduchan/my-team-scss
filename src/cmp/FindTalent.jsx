@@ -1,4 +1,5 @@
 import { Graphic1 } from './Graphic1'
+import { Graphic2 } from './Graphic2'
 
 export function FindTalent() {
     return (
@@ -13,6 +14,7 @@ export function FindTalent() {
                 global talent. We're about to change that.
             </p>
             <Graphic1 />
+            <Graphic2 />
         </div>
     )
 }
