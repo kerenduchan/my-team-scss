@@ -1,13 +1,30 @@
 :root {
     // colors
-    --primary-color-1: white;
-    --primary-color-2: #f67e7e;
-    --primary-color-3: #014e56;
-    --secondary-color-1: #79c8c7;
-    --secondary-color-2: #2c6269;
-    --secondary-color-3: #004047;
-    --secondary-color-4: #012f34;
-    --secondary-color-5: #002529;
+    --primary-1: white;
+    --primary-2: #f67e7e;
+    --primary-3: #014e56;
+    --secondary-1: #79c8c7;
+    --secondary-2: #2c6269;
+    --secondary-3: #004047;
+    --secondary-4: #012f34;
+    --secondary-5: #002529;
+}
+
+$colors: primary-1, primary-2, primary-3, secondary-1, secondary-2, secondary-3,
+    secondary-4, secondary-5;
+
+// background-color
+@each $color in $colors {
+    .bg-#{$color} {
+        background-color: var(--#{$color});
+    }
+}
+
+// border-color
+@each $color in $colors {
+    .border-#{$color} {
+        border-color: var(--#{$color});
+    }
 }
 
 .stripes {
@@ -20,32 +37,18 @@
     height: 4px;
 }
 
-.bg-secondary-1 {
-    background-color: var(--secondary-color-1);
-}
-
-.bg-secondary-2 {
-    background-color: var(--secondary-color-2);
-}
-
-.border-primary-2 {
-    border-color: var(--primary-color-2);
-}
-
-.border-secondary-4 {
-    border-color: var(--secondary-color-4);
+@mixin circle($size: 200px) {
+    border-radius: 50%;
+    width: $size;
+    aspect-ratio: 1 / 1;
 }
 
 .circle {
-    border-radius: 50%;
-    width: 200px;
-    aspect-ratio: 1 / 1;
+    @include circle();
 }
 
 .donut {
-    border-radius: 50%;
-    width: 200px;
-    aspect-ratio: 1 / 1;
+    @include circle();
     border-width: 67px;
     border-style: solid;
     box-sizing: border-box;
