@@ -1,27 +1,31 @@
 .graphic1 {
-    position: relative;
     width: 358px;
-}
+    display: grid;
+    grid-template-columns: 133.5px 1fr;
 
-.graphic1-item {
-    position: absolute;
-    top: 0;
-}
+    .stripes {
+        grid-area: 1 / 1 / span 1 / span 2;
+        justify-self: start;
+        align-self: start;
+    }
 
-.graphic1-item:nth-child(1),
-.graphic1-item:nth-child(2) {
-    left: 0;
-}
+    .graphic1-full-circle {
+        grid-area: 1 / 1 / span 1 / span 2;
+        justify-self: start;
+    }
 
-.graphic1-item:nth-child(3) {
-    right: 0;
-}
+    .graphic1-donut-back {
+        grid-area: 1 / 2;
+        justify-self: end;
+    }
 
-.graphic1-item:nth-child(4) {
-    right: 24px;
-}
+    .graphic1-donut-front {
+        grid-area: 1 / 2;
+    }
 
-.graphic1-item:nth-child(5) {
-    right: 0;
-    @include square(43px);
+    .graphic1-square {
+        grid-area: 1 / 2;
+        @include square(43px);
+        justify-self: end;
+    }
 }
