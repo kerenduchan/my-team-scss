@@ -1,26 +1,33 @@
 .find-talent {
     margin-top: 160px;
-    display: flex;
-    flex-direction: column;
+
+    display: grid;
+    grid-template-columns: 24px 1fr 24px;
     align-items: center;
+    justify-items: center;
     text-align: center;
 
     .title {
+        grid-area: 1 / 2;
         @include font(40px, 40px);
     }
 
     p {
+        grid-area: 2 / 2;
         margin-top: 18px;
         @include font(15px, 28px);
     }
 
     .graphic1 {
+        grid-area: 3 / 2;
         margin: 0 calc(9px - var(--margin-mobile));
         margin-top: 97px;
     }
 
     // tablet
     @media screen and (min-width: $breakpoint-tablet) {
+        grid-template-columns: 40px 1fr 40px;
+
         margin-top: 224px;
 
         .title {
@@ -40,7 +47,9 @@
     // desktop
     @media screen and (min-width: $breakpoint-desktop) {
         display: grid;
-        grid-template-columns: minmax(10px, 165px) auto 1fr minmax(10px, 165px);
+        grid-template-columns: var(--margin-desktop) auto 1fr var(
+                --margin-desktop
+            );
         text-align: start;
 
         .title {

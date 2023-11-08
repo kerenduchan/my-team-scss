@@ -3,18 +3,7 @@
 }
 
 body {
-    margin: 0 var(--margin-mobile);
-
-    // tablet
-    @media screen and (min-width: $breakpoint-tablet) {
-        margin: 0 var(--margin-tablet);
-    }
-
-    // desktop
-    @media screen and (min-width: $breakpoint-desktop) {
-        margin: 0 var(--margin-desktop);
-    }
-
+    margin: 0;
     background-color: var(--primary-3);
     color: var(--primary-1);
 }
