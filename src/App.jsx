@@ -1,7 +1,7 @@
-import { Design1 } from './cmp/Design1'
+import { Header } from './cmp/Header'
 
 function App() {
-    return <Design1 />
+    return <Header />
 }
 
 export default App

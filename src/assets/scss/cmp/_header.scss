@@ -1,0 +1,25 @@
+header {
+    display: grid;
+    grid-template-columns: 165px repeat(2, auto) 1fr 165px;
+    grid-template-areas: '. logo nav contact .';
+    align-items: center;
+    margin-top: 73px;
+
+    .logo {
+        grid-area: logo;
+        margin-inline-end: 80px;
+    }
+
+    .contact-us {
+        grid-area: contact;
+        justify-self: end;
+    }
+}
+
+nav {
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 40px;
+    @include body-1();
+}
