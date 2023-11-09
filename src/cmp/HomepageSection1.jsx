@@ -11,7 +11,7 @@ export function HomepageSection1() {
                 global talent. We're about to change that.
             </p>
             <img className="stripe" src="stripe-secondary-1.svg" />
-            <img className="graphic1" src="graphic1.svg" />
+            <img className="pattern-2" src="images/bg-pattern-home-2.svg" />
             <img className="pattern-1" src="images/bg-pattern-home-1.svg" />
         </div>
     )
