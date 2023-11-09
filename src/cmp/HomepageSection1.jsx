@@ -1,6 +1,6 @@
-export function FindTalent() {
+export function HomepageSection1() {
     return (
-        <div className="find-talent">
+        <div className="homepage-section-1">
             <div className="title">
                 Find the
                 <br /> best <mark>talent</mark>

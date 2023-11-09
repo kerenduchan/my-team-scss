@@ -1,11 +1,11 @@
 import { Header } from './cmp/Header'
-import { FindTalent } from './cmp/FindTalent'
+import { HomepageSection1 } from './cmp/HomepageSection1'
 
 function App() {
     return (
         <>
             <Header />
-            <FindTalent />
+            <HomepageSection1 />
         </>
     )
 }
