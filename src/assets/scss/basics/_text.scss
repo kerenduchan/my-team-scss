@@ -1,11 +1,15 @@
 body {
-    font-family: var(--font), sans-serif;
+    font-family: var(--bold-font), sans-serif;
 }
 
-@mixin font($size, $line-height, $weight: var(--bold)) {
+@mixin font($size, $line-height, $weight: bold) {
+    @if $weight == bold {
+        font-family: var(--bold-font);
+    } @else {
+        font-family: var(--semi-bold-font);
+    }
     font-size: $size;
     line-height: $line-height;
-    font-weight: $weight;
 }
 
 @mixin h1() {
@@ -25,11 +29,11 @@ body {
 }
 
 @mixin body-1() {
-    @include font(18px, 28px, var(--semi-bold));
+    @include font(18px, 28px, 'semi-bold');
 }
 
 @mixin body-2() {
-    @include font(15px, 25px, var(--semi-bold));
+    @include font(15px, 25px, 'semi-bold');
 }
 
 .body-1 {

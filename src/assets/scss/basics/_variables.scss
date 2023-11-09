@@ -10,12 +10,13 @@
     --secondary-5: #002529;
 
     // font
-    --font: 'Livvic';
+    --bold-font: 'Livvic-Bold';
+    --semi-bold-font: 'Livvic-SemiBold';
 
     --margin-mobile: 24px;
     --margin-tablet: 40px;
     --margin-desktop: 165px;
 }
 
-$breakpoint-tablet: 376px;
-$breakpoint-desktop: 769px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1440px;

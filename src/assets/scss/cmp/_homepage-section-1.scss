@@ -15,7 +15,7 @@
     p {
         grid-area: 2 / 2;
         margin-top: 18px;
-        @include font(15px, 28px);
+        @include font(15px, 28px, 'semi-bold');
     }
 
     .graphic1 {
