@@ -1,6 +1,3 @@
-import { Graphic1 } from './Graphic1'
-import { Graphic2 } from './Graphic2'
-
 export function FindTalent() {
     return (
         <div className="find-talent">
@@ -13,8 +10,8 @@ export function FindTalent() {
                 be hard. Most companies aren't tapping into the abundance of
                 global talent. We're about to change that.
             </p>
-            <Graphic1 />
-            <Graphic2 />
+            <img className="graphic1" src="graphic1.svg" />
+            <img className="graphic2" src="graphic2.svg" />
         </div>
     )
 }

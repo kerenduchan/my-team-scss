@@ -78,9 +78,9 @@
         .graphic2 {
             position: relative;
             align-self: start;
-            left: -50%;
             display: grid;
             grid-area: 1 / 1;
+            padding-inline-end: 65px;
         }
     }
 }
