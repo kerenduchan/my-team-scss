@@ -1,0 +1,27 @@
+.homepage-section-2 {
+    padding-inline-start: 24px;
+    padding-inline-end: 24px;
+    padding-bottom: 64px;
+    display: grid;
+    background-color: var(--secondary-4);
+
+    .stripe {
+        grid-area: 1 / 1;
+        justify-self: start;
+        padding-top: 64px;
+    }
+
+    .title {
+        grid-area: 2 / 1;
+        @include font(32px, 32px);
+        justify-self: start;
+        padding-top: 32px;
+        margin-inline-end: 11px;
+    }
+
+    .graphic3 {
+        grid-area: 1 / 2 / span 2;
+        justify-self: end;
+        margin-inline-end: -24px;
+    }
+}
