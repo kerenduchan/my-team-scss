@@ -1,27 +1,52 @@
 .homepage-section-2 {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homepage-section-2-content {
     padding-inline-start: 24px;
     padding-inline-end: 24px;
     padding-bottom: 64px;
     display: grid;
-    background-color: var(--secondary-4);
 
     .stripe {
         grid-area: 1 / 1;
-        justify-self: start;
         padding-top: 64px;
     }
 
     .title {
-        grid-area: 2 / 1;
+        grid-area: 1 / 1;
         @include font(32px, 32px);
         justify-self: start;
-        padding-top: 32px;
+        padding-top: 100px;
         margin-inline-end: 11px;
     }
 
     .pattern-3 {
-        grid-area: 1 / 2 / span 2;
+        grid-area: 1 / 2;
         justify-self: end;
         margin-inline-end: -24px;
+    }
+
+    // tablet
+    @media screen and (min-width: $breakpoint-tablet) {
+        padding-inline-start: 98px;
+        padding-inline-end: 98px;
+        min-width: calc($breakpoint-tablet - 2 * 98px);
+
+        .stripe {
+            padding-top: 100px;
+        }
+
+        .title {
+            padding-top: 136px;
+            max-width: 445px;
+        }
+
+        .pattern-3 {
+            margin-inline-end: -98px;
+        }
     }
 }
