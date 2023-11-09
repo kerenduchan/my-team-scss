@@ -40,6 +40,10 @@ body {
     @include body-1();
 }
 
+.body-2 {
+    @include body-2();
+}
+
 h1 {
     @include h1();
 
