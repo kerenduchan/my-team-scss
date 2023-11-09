@@ -1,8 +1,8 @@
-export function Stripes({ classes }) {
-    const stripeIds = [...Array(6).keys()]
+export function Stripes({ count }) {
+    const stripeIds = [...Array(count).keys()]
 
     return (
-        <div className={`${classes} stripes`}>
+        <div className="stripes">
             {stripeIds.map((id) => (
                 <div key={id} className="stripe bg-secondary-1" />
             ))}
