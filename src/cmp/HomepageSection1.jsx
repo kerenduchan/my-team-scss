@@ -12,7 +12,7 @@ export function HomepageSection1() {
             </p>
             <img className="stripe" src="stripe-secondary-1.svg" />
             <img className="graphic1" src="graphic1.svg" />
-            <img className="graphic2" src="graphic2.svg" />
+            <img className="pattern-1" src="images/bg-pattern-home-1.svg" />
         </div>
     )
 }
