@@ -1,7 +1,7 @@
 export function Header() {
     return (
         <header>
-            <img className="logo" src="myteam.svg" alt="myteam" />
+            <img className="logo" src="images/logo.svg" alt="myteam" />
             <nav>
                 <a>home</a>
                 <a>about</a>
