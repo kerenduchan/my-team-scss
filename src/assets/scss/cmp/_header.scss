@@ -1,12 +1,21 @@
 header {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-content {
+    width: 100%;
     display: grid;
     grid-template-columns: 24px auto 1fr 24px;
     align-items: center;
-    margin-top: 73px;
+    padding-top: 73px;
 
     .logo {
         grid-area: 1 / 2;
-        margin-inline-end: 80px;
+        width: 128px;
+        height: 32px;
     }
 
     .contact-us {
@@ -20,6 +29,10 @@ header {
     // tablet
     @media screen and (min-width: $breakpoint-tablet) {
         grid-template-columns: 40px repeat(2, auto) 1fr 40px;
+
+        .logo {
+            margin-inline-end: 48px;
+        }
 
         .contact-us {
             display: unset;
@@ -40,5 +53,12 @@ header {
     // desktop
     @media screen and (min-width: $breakpoint-desktop) {
         grid-template-columns: 165px repeat(2, auto) 1fr 165px;
+        max-width: $breakpoint-desktop;
+
+        .logo {
+            width: 160px;
+            height: 40px;
+            margin-inline-end: 80px;
+        }
     }
 }
