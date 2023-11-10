@@ -4,7 +4,7 @@
 }
 
 .homepage-section-2-content {
-    @include px(24px);
+    @include px(var(--margin-mobile));
     padding-bottom: 64px;
     display: grid;
 
@@ -13,10 +13,9 @@
         padding-top: 64px;
     }
 
-    .title {
+    & > .title {
         grid-area: 1 / 1;
         @include font(32px, 32px);
-        justify-self: start;
         padding-top: 100px;
         margin-inline-end: 11px;
         max-width: 240px;
@@ -25,21 +24,20 @@
     .pattern-3 {
         grid-area: 1 / 1;
         justify-self: end;
-        margin-inline-end: -24px;
+        margin-inline-end: var(--margin-mobile-negative);
     }
 
     ul {
-        @include flex-column-center();
         padding-top: 9px;
+        @include flex-column-center();
     }
 
     li {
         padding-top: 47px;
-        @include flex-column-center();
         text-align: center;
+        @include flex-column-center();
 
         .icon {
-            grid-area: 1 / 1 / span 2;
             width: 72px;
             aspect-ratio: 1 / 1;
             object-fit: contain;
@@ -47,35 +45,12 @@
         }
 
         .title {
-            grid-area: 1 / 2;
-            padding: 0;
-            padding-top: 16px;
-            padding-bottom: 9px;
-            margin: 0;
             @include h3();
-        }
-
-        .text {
-            grid-area: 2 / 2;
+            @include my(16px, 9px);
         }
     }
 
     // tablet
     @media screen and (min-width: $breakpoint-tablet) {
-        @include px(98px);
-        min-width: calc($breakpoint-tablet - 2 * 98px);
-
-        .stripe {
-            padding-top: 100px;
-        }
-
-        .title {
-            padding-top: 136px;
-            max-width: 445px;
-        }
-
-        .pattern-3 {
-            margin-inline-end: -98px;
-        }
     }
 }
