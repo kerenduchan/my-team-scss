@@ -1,6 +1,7 @@
 import { Header } from './cmp/Header'
 import { HomepageSection1 } from './cmp/HomepageSection1'
 import { HomepageSection2 } from './cmp/HomepageSection2'
+import { HomepageSection3 } from './cmp/HomepageSection3'
 
 function App() {
     return (
@@ -8,6 +9,7 @@ function App() {
             <Header />
             <HomepageSection1 />
             <HomepageSection2 />
+            <HomepageSection3 />
         </>
     )
 }
