@@ -4,32 +4,30 @@
 }
 
 $homepage-section-2-margin-y: 64px;
-$homepage-section-2-margin-y-negative: calc(0px - $homepage-section-2-margin-y);
 
 .homepage-section-2-content {
-    @include margin-x(var(--margin-x-mobile));
-    @include margin-y($homepage-section-2-margin-y);
     display: grid;
+    grid-template-columns: var(--margin-x-mobile) 1fr var(--margin-x-mobile);
+    grid-template-rows: $homepage-section-2-margin-y repeat(3, auto) $homepage-section-2-margin-y;
 
     .pattern-3 {
-        grid-area: 1 / 1 / span 3;
+        grid-area: 1 / 1 / -1 / -1;
         justify-self: end;
-        margin-inline-end: var(--margin-x-mobile-negative);
-        margin-top: $homepage-section-2-margin-y-negative;
     }
 
     .stripe {
-        grid-area: 1 / 1;
+        grid-area: 2 / 2;
     }
 
     & > .title {
-        grid-area: 2 / 1;
+        grid-area: 3 / 2;
         @include font(32px, 32px);
         @include margin-y(32px, 56px);
         max-width: 240px;
     }
 
     ul {
+        grid-area: 4 / 2;
         @include flex-column-center();
     }
 
@@ -39,12 +37,6 @@ $homepage-section-2-margin-y-negative: calc(0px - $homepage-section-2-margin-y);
         }
         text-align: center;
         @include flex-column-center();
-
-        .icon {
-            width: 72px;
-            aspect-ratio: 1 / 1;
-            object-fit: contain;
-        }
 
         .title {
             @include h3();
