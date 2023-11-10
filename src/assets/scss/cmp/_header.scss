@@ -1,18 +1,19 @@
 header {
-    width: 100vw;
-    @include flex-column-center();
-}
-
-.header-content {
-    width: 100%;
+    position: fixed;
     display: grid;
-    grid-template-columns: 24px auto 1fr 24px;
+    width: 100%;
+
+    grid-template-columns:
+        var(--margin-x-mobile)
+        auto
+        auto
+        var(--margin-x-mobile);
+
+    grid-template-rows: 48px auto;
     align-items: center;
-    padding-top: 73px;
 
     .logo {
-        grid-area: 1 / 2;
-        width: 128px;
+        grid-area: 2 / 2;
         height: 32px;
     }
 
@@ -22,6 +23,11 @@ header {
 
     nav {
         display: none;
+    }
+
+    .hamburger {
+        grid-area: 2 / 3;
+        justify-self: end;
     }
 
     // tablet
