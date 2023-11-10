@@ -1,6 +1,19 @@
+$min-margin: 20px;
+
 .homepage-section-2 {
     display: grid;
-    grid-template-columns: var(--margin-x-mobile) 1fr var(--margin-x-mobile);
+
+    $min-col1: $min-margin;
+    $min-col2: 270px;
+    $min-col3: $min-margin;
+
+    $min-mobile-width: $min-col1 + $min-col2 + $min-col3;
+
+    grid-template-columns:
+        minmax($min-col1, 1fr)
+        minmax($min-col2, 327px)
+        minmax($min-col3, 1fr);
+
     grid-template-rows: 64px auto 32px auto 56px auto 64px;
 
     .pattern-3 {
@@ -30,6 +43,7 @@
         display: grid;
         grid-template-rows: auto 16px auto 8px auto;
         justify-items: center;
+        text-align: center;
 
         .title {
             grid-area: 3 / 1;
@@ -42,8 +56,19 @@
     }
 
     // tablet
-    @media screen and (min-width: $breakpoint-tablet) {
-        grid-template-columns: var(--margin-x-tablet) 1fr var(--margin-x-tablet);
+
+    $min-col1: $min-margin;
+    $min-col2: 478px;
+    $min-col3: $min-margin + 100px;
+
+    $min-tablet-width: $min-col1 + $min-col2 + $min-col3;
+
+    @media screen and (min-width: $min-tablet-width) {
+        grid-template-columns:
+            minmax($min-col1, 1fr)
+            minmax($min-col2, 1fr)
+            minmax($min-col3, 1fr);
+
         grid-template-rows: 100px auto 32px auto 64px auto 100px;
 
         & > .title {
@@ -54,6 +79,7 @@
             justify-items: start;
             grid-template-columns: 72px 23px 1fr;
             grid-template-rows: auto 16px auto;
+            text-align: start;
 
             &:not(:last-child) {
                 margin-bottom: 32px;
@@ -75,8 +101,7 @@
         }
     }
 
-    $min-margin: 20px;
-
+    // desktop
     $min-col1: $min-margin;
     $min-col2: 445px;
     $min-col3: $min-margin;
@@ -86,11 +111,14 @@
     $min-desktop-width: $min-col1 + $min-col2 + $min-col3 + $min-col4 +
         $min-col5;
 
-    // desktop
     @media screen and (min-width: $min-desktop-width) {
         grid-template-columns:
-            minmax($min-col1, 1fr) $min-col2 minmax($min-col3, 125px)
-            $min-col4 minmax($min-col5, 1fr);
+            minmax($min-col1, 1fr)
+            $min-col2
+            minmax($min-col3, 125px)
+            $min-col4
+            minmax($min-col5, 1fr);
+
         grid-template-rows: 140px auto 54px auto 140px;
 
         .pattern-3 {
