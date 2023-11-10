@@ -4,8 +4,7 @@
 }
 
 .homepage-section-2-content {
-    padding-inline-start: 24px;
-    padding-inline-end: 24px;
+    @include px(24px);
     padding-bottom: 64px;
     display: grid;
 
@@ -63,8 +62,7 @@
 
     // tablet
     @media screen and (min-width: $breakpoint-tablet) {
-        padding-inline-start: 98px;
-        padding-inline-end: 98px;
+        @include px(98px);
         min-width: calc($breakpoint-tablet - 2 * 98px);
 
         .stripe {

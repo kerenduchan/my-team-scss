@@ -2,9 +2,13 @@
     margin: 0px;
 }
 
-@mixin px($start, $end) {
+@mixin px($start, $end: '') {
     padding-inline-start: $start;
-    padding-inline-end: $end;
+    @if ($end == '') {
+        padding-inline-end: $start;
+    } @else {
+        padding-inline-end: $end;
+    }
 }
 
 @mixin py($top, $bottom) {
