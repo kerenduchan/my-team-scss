@@ -7,7 +7,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: var(--margin-x-mobile) 1fr var(--margin-x-mobile);
-    grid-template-rows: 64px repeat(3, auto) 64px;
+    grid-template-rows: 64px auto 32px auto 56px auto 64px;
 
     .pattern-3 {
         grid-area: 1 / 1 / -1 / -1;
@@ -19,14 +19,13 @@
     }
 
     & > .title {
-        grid-area: 3 / 2;
+        grid-area: 4 / 2;
         @include font(32px, 32px);
-        @include margin-y(32px, 56px);
         max-width: 240px;
     }
 
     ul {
-        grid-area: 4 / 2;
+        grid-area: 6 / 2;
         @include flex-column-center();
     }
 
