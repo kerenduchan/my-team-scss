@@ -39,22 +39,19 @@
 
     // tablet
     @media screen and (min-width: $breakpoint-tablet) {
-        grid-template-columns: 40px 1fr 40px;
+        grid-template-columns:
+            minmax(var(--margin-x-tablet), 1fr)
+            auto
+            minmax(var(--margin-x-tablet), 1fr);
 
-        margin-top: 112px;
+        grid-template-rows: 224px auto 24px auto 256px;
 
         .title {
             @include h1-small();
         }
 
         p {
-            margin-top: 24px;
             max-width: 457px;
-        }
-
-        .pattern-2 {
-            margin: 0 calc(9px - var(--margin-tablet));
-            margin-top: 140px;
         }
     }
 
