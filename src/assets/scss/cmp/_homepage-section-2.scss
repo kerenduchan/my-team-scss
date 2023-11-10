@@ -33,7 +33,7 @@ $homepage-section-2-margin-y: 64px;
 
     li {
         &:not(:last-child) {
-            margin-bottom: 47px;
+            margin-bottom: 48px;
         }
         text-align: center;
         @include flex-column-center();
@@ -41,7 +41,7 @@ $homepage-section-2-margin-y: 64px;
         .title {
             @include h3();
             margin-top: 16px;
-            margin-bottom: 9px;
+            margin-bottom: 8px;
         }
     }
 
