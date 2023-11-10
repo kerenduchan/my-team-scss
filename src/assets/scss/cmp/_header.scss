@@ -54,13 +54,17 @@ header {
 
     // desktop
     @media screen and (min-width: $breakpoint-desktop) {
-        grid-template-columns: 165px repeat(2, auto) 1fr 165px;
-        max-width: $breakpoint-desktop;
+        grid-template-columns:
+            var(--margin-x-desktop)
+            auto
+            80px
+            1fr
+            var(--margin-x-desktop);
+
+        grid-template-rows: 73px auto 20px;
 
         .logo {
-            width: 160px;
             height: 40px;
-            margin-inline-end: 80px;
         }
     }
 }

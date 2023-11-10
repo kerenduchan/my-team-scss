@@ -8,5 +8,6 @@ button {
     border-radius: calc($button-height / 2);
     background-color: transparent;
     color: var(--primary-1);
+    text-align: center;
     @include body-1();
 }
