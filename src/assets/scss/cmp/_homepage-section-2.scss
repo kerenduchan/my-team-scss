@@ -1,8 +1,6 @@
 .homepage-section-2 {
     width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-column-center();
 }
 
 .homepage-section-2-content {
@@ -32,18 +30,19 @@
     }
 
     ul {
-        @include flex-center-all();
+        @include flex-column-center();
         padding-top: 9px;
     }
 
     li {
         padding-top: 47px;
-        @include flex-center-all();
+        @include flex-column-center();
+        text-align: center;
 
         .icon {
             grid-area: 1 / 1 / span 2;
             width: 72px;
-            height: 72px;
+            aspect-ratio: 1 / 1;
             object-fit: contain;
             padding-inline-start: 8px;
         }

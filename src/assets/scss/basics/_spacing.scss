@@ -1,0 +1,13 @@
+.m0 {
+    margin: 0px;
+}
+
+@mixin px($start, $end) {
+    padding-inline-start: $start;
+    padding-inline-end: $end;
+}
+
+@mixin py($top, $bottom) {
+    padding-top: $top;
+    padding-bottom: $bottom;
+}
