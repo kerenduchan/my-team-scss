@@ -3,37 +3,40 @@
     @include flex-column-center();
 }
 
+$homepage-section-2-margin-y: 64px;
+$homepage-section-2-margin-y-negative: calc(0px - $homepage-section-2-margin-y);
+
 .homepage-section-2-content {
-    @include px(var(--margin-mobile));
-    padding-bottom: 64px;
+    @include margin-x(var(--margin-x-mobile));
+    @include margin-y($homepage-section-2-margin-y);
     display: grid;
+
+    .pattern-3 {
+        grid-area: 1 / 1 / span 3;
+        justify-self: end;
+        margin-inline-end: var(--margin-x-mobile-negative);
+        margin-top: $homepage-section-2-margin-y-negative;
+    }
 
     .stripe {
         grid-area: 1 / 1;
-        padding-top: 64px;
     }
 
     & > .title {
-        grid-area: 1 / 1;
+        grid-area: 2 / 1;
         @include font(32px, 32px);
-        padding-top: 100px;
-        margin-inline-end: 11px;
+        @include margin-y(32px, 56px);
         max-width: 240px;
     }
 
-    .pattern-3 {
-        grid-area: 1 / 1;
-        justify-self: end;
-        margin-inline-end: var(--margin-mobile-negative);
-    }
-
     ul {
-        padding-top: 9px;
         @include flex-column-center();
     }
 
     li {
-        padding-top: 47px;
+        &:not(:last-child) {
+            margin-bottom: 47px;
+        }
         text-align: center;
         @include flex-column-center();
 
@@ -41,16 +44,53 @@
             width: 72px;
             aspect-ratio: 1 / 1;
             object-fit: contain;
-            padding-inline-start: 8px;
         }
 
         .title {
             @include h3();
-            @include my(16px, 9px);
+            margin-top: 16px;
+            margin-bottom: 9px;
         }
     }
 
     // tablet
     @media screen and (min-width: $breakpoint-tablet) {
+        @include margin-x(var(--margin-tablet));
+
+        .pattern-3 {
+            margin-inline-end: var(--margin-tablet-negative);
+            grid-area: 1 / 1;
+        }
+
+        .stripe {
+            margin-top: 100px;
+        }
+
+        & > .title {
+            margin-top: 136px;
+            max-width: 445px;
+        }
+
+        li {
+            text-align: start;
+            margin-bottom: 32px;
+            display: grid;
+            grid-template-columns: 94px 1fr;
+
+            .icon {
+                grid-area: 1 / 1 / span 2;
+                align-self: start;
+                padding-inline-start: 4px;
+            }
+
+            .title {
+                grid-area: 1 / 2;
+                margin-bottom: 16px;
+            }
+
+            .text {
+                grid-area: 2 / 2;
+            }
+        }
     }
 }

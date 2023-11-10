@@ -1,4 +1,4 @@
-@mixin px($start, $end: '') {
+@mixin padding-x($start, $end: '') {
     padding-inline-start: $start;
     @if ($end == '') {
         padding-inline-end: $start;
@@ -7,7 +7,7 @@
     }
 }
 
-@mixin py($start, $end) {
+@mixin padding-y($start, $end) {
     padding-block-start: $start;
     @if ($end == '') {
         padding-block-end: $start;
@@ -16,7 +16,7 @@
     }
 }
 
-@mixin mx($start, $end: '') {
+@mixin margin-x($start, $end: '') {
     margin-inline-start: $start;
     @if ($end == '') {
         margin-inline-end: $start;
@@ -25,12 +25,12 @@
     }
 }
 
-@mixin my($start, $end) {
-    margin-block-start: $start;
-    @if ($end == '') {
-        margin-block-end: $start;
+@mixin margin-y($top, $bottom: '') {
+    margin-top: $top;
+    @if ($bottom == '') {
+        margin-bottom: $top;
     } @else {
-        margin-block-end: $end;
+        margin-bottom: $bottom;
     }
 }
 
