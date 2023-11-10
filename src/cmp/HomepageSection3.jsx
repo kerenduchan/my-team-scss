@@ -42,6 +42,7 @@ export function HomepageSection3() {
                     </li>
                 ))}
             </ul>
+            <img className="pattern-5" src="images/bg-pattern-home-5.svg" />
         </div>
     )
 }
@@ -49,7 +50,7 @@ export function HomepageSection3() {
 function SuccessStory({ name, avatar, text }) {
     return (
         <>
-            <p className="text body-2">"{text}"</p>
+            <p className="text body-2">“{text}”</p>
             <heading className="name secondary-1">{name}</heading>
             <img className="avatar" src={avatar} />
         </>

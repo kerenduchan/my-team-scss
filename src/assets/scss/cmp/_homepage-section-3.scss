@@ -1,5 +1,61 @@
 .homepage-section-3 {
+    display: grid;
+
+    grid-template-columns:
+        minmax(var(--margin-x-mobile), 1fr)
+        auto
+        minmax(var(--margin-x-mobile), 1fr);
+
+    grid-template-rows: 140px auto 48px auto 164px;
+
+    .pattern-4 {
+        grid-area: 1 / 1 / -1 / -1;
+    }
+
     .title {
+        grid-area: 2 / 2;
         @include font(32px, 32px);
+        text-align: center;
+    }
+
+    .pattern-5 {
+        grid-area: 5 / 1 / -1 / -1;
+        justify-self: end;
+        align-self: end;
+    }
+
+    ul {
+        grid-area: 4 / 2;
+
+        li {
+            &:not(:last-child) {
+                margin-bottom: 48px;
+            }
+            display: grid;
+            grid-template-rows: 36px auto 16px auto 36px auto;
+            justify-items: center;
+            background-image: url('images/icon-quotes.svg');
+            background-repeat: no-repeat;
+            background-position: top center;
+
+            .name {
+                grid-area: 4 / 1;
+                @include h3();
+            }
+
+            .text {
+                grid-area: 2 / 1;
+                display: grid;
+                text-align: center;
+            }
+
+            .avatar {
+                grid-area: 6 / 1;
+                width: 62px;
+                aspect-ratio: 1 / 1;
+                border-radius: 50%;
+                outline: 2px solid #c4fffe;
+            }
+        }
     }
 }
