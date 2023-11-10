@@ -22,29 +22,39 @@
         justify-self: start;
         padding-top: 100px;
         margin-inline-end: 11px;
+        max-width: 240px;
     }
 
     .pattern-3 {
-        grid-area: 1 / 2;
+        grid-area: 1 / 1;
         justify-self: end;
         margin-inline-end: -24px;
     }
 
+    ul {
+        @include flex-center-all();
+        padding-top: 9px;
+    }
+
     li {
-        display: grid;
-        padding-bottom: 32px;
+        padding-top: 47px;
+        @include flex-center-all();
+
         .icon {
             grid-area: 1 / 1 / span 2;
             width: 72px;
             height: 72px;
-            padding-inline-end: 23px;
+            object-fit: contain;
+            padding-inline-start: 8px;
         }
 
         .title {
             grid-area: 1 / 2;
             padding: 0;
-            padding-bottom: 24px;
+            padding-top: 16px;
+            padding-bottom: 9px;
             margin: 0;
+            @include h3();
         }
 
         .text {
