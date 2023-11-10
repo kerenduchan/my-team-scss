@@ -34,11 +34,17 @@
             margin-bottom: 48px;
         }
         text-align: center;
-        @include flex-column-center();
+        display: grid;
+        grid-template-rows: auto 16px auto 8px auto;
+        justify-items: center;
 
         .title {
+            grid-area: 3 / 1;
             @include h3();
-            @include margin-y(16px, 8px);
+        }
+
+        .text {
+            grid-area: 5 / 1;
         }
     }
 
