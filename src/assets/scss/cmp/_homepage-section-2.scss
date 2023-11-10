@@ -45,10 +45,9 @@
     // tablet
     @media screen and (min-width: $breakpoint-tablet) {
         grid-template-columns: var(--margin-x-tablet) 1fr var(--margin-x-tablet);
-        grid-template-rows: 100px repeat(3, auto) 100px;
+        grid-template-rows: 100px auto 32px auto 64px auto 100px;
 
         & > .title {
-            @include margin-y(32px, 64px);
             max-width: 445px;
         }
 
@@ -93,7 +92,6 @@
         & > .title {
             grid-area: 4 / 2;
             @include h2();
-            @include margin-y(0px, 0px);
         }
 
         ul {
