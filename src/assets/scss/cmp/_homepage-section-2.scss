@@ -1,10 +1,4 @@
 .homepage-section-2 {
-    width: 100vw;
-    @include flex-column-center();
-}
-
-.homepage-section-2-content {
-    width: 100%;
     display: grid;
     grid-template-columns: var(--margin-x-mobile) 1fr var(--margin-x-mobile);
     grid-template-rows: 64px auto 32px auto 56px auto 64px;
@@ -81,11 +75,22 @@
         }
     }
 
+    $min-margin: 20px;
+
+    $min-col1: $min-margin;
+    $min-col2: 445px;
+    $min-col3: $min-margin;
+    $min-col4: 540px;
+    $min-col5: $min-margin + 100px;
+
+    $min-desktop-width: $min-col1 + $min-col2 + $min-col3 + $min-col4 +
+        $min-col5;
+
     // desktop
-    @media screen and (min-width: $breakpoint-desktop) {
-        grid-template-columns: var(--margin-x-desktop) auto 125px 1fr var(
-                --margin-x-desktop
-            );
+    @media screen and (min-width: $min-desktop-width) {
+        grid-template-columns:
+            minmax($min-col1, 1fr) $min-col2 minmax($min-col3, 125px)
+            $min-col4 minmax($min-col5, 1fr);
         grid-template-rows: 140px auto 54px auto 140px;
 
         .pattern-3 {
