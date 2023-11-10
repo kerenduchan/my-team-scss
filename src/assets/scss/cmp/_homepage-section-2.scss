@@ -78,4 +78,28 @@
             }
         }
     }
+
+    // desktop
+    @media screen and (min-width: $breakpoint-desktop) {
+        grid-template-columns: var(--margin-x-desktop) auto 125px 1fr var(
+                --margin-x-desktop
+            );
+        grid-template-rows: 140px auto 54px auto 140px;
+
+        .pattern-3 {
+            grid-area: 1 / 1 / -1 / -1;
+            align-self: end;
+        }
+
+        & > .title {
+            grid-area: 4 / 2;
+            @include h2();
+            @include margin-y(0px, 0px);
+        }
+
+        ul {
+            grid-area: 4 / 4;
+            @include flex-column-center();
+        }
+    }
 }
