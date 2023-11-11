@@ -4,9 +4,9 @@ header {
     width: 100%;
 
     grid-template-columns:
-        var(--margin-x-mobile)
+        var(--margin-x-narrow)
         1fr
-        var(--margin-x-mobile);
+        var(--margin-x-narrow);
 
     grid-template-rows: 48px auto 10px;
     align-items: center;
@@ -29,11 +29,11 @@ header {
     // tablet
     @include for-normal-layout() {
         grid-template-columns:
-            var(--margin-x-tablet-narrow)
+            var(--margin-x-normal-narrow)
             auto
             48px
             1fr
-            var(--margin-x-tablet-narrow);
+            var(--margin-x-normal-narrow);
 
         grid-template-rows: 64px auto 20px;
 
@@ -62,11 +62,11 @@ header {
     // desktop
     @include for-wide-layout() {
         grid-template-columns:
-            var(--margin-x-desktop)
+            var(--margin-x-wide)
             auto
             80px
             1fr
-            var(--margin-x-desktop);
+            var(--margin-x-wide);
 
         grid-template-rows: 73px auto 20px;
 

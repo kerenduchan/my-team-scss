@@ -41,9 +41,9 @@ footer {
     // tablet
     @include for-normal-layout() {
         grid-template-columns:
-            var(--margin-x-tablet-narrow)
+            var(--margin-x-normal-narrow)
             1fr
-            var(--margin-x-tablet-narrow);
+            var(--margin-x-normal-narrow);
 
         grid-template-rows: 56px auto 32px auto 56px;
 
@@ -80,12 +80,12 @@ footer {
     // desktop
     @include for-wide-layout() {
         grid-template-columns:
-            var(--margin-x-desktop)
+            var(--margin-x-wide)
             auto
             125px
             445px
             380px
-            var(--margin-x-desktop);
+            var(--margin-x-wide);
 
         grid-template-rows: 48px auto 48px;
 

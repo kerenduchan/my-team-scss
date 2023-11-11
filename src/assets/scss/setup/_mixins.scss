@@ -20,15 +20,15 @@
 }
 
 @mixin section-gtc-narrow() {
-    @include section-gtc(var(--margin-x-mobile));
+    @include section-gtc(var(--margin-x-narrow));
 }
 
 @mixin section-gtc-normal() {
-    @include section-gtc(var(--margin-x-tablet));
+    @include section-gtc(var(--margin-x-normal));
 }
 
 @mixin section-gtc-wide() {
-    @include section-gtc(var(--margin-x-desktop));
+    @include section-gtc(var(--margin-x-wide));
 }
 
 // layout mixins

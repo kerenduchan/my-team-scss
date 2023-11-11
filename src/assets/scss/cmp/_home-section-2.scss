@@ -90,11 +90,11 @@
     // desktop
     @include for-wide-layout() {
         grid-template-columns:
-            minmax(var(--margin-x-desktop), 1fr)
+            minmax(var(--margin-x-wide), 1fr)
             auto
             125px
             auto
-            minmax(var(--margin-x-desktop), 1fr);
+            minmax(var(--margin-x-wide), 1fr);
 
         grid-template-rows: 140px auto 54px auto 140px;
 
