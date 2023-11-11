@@ -46,4 +46,39 @@
             margin-bottom: 0px;
         }
     }
+
+    // desktop
+    @media screen and (min-width: $breakpoint-desktop) {
+        grid-template-columns:
+            minmax(var(--margin-x-desktop), 1fr)
+            350px
+            minmax(30px, 1fr)
+            730px
+            minmax(var(--margin-x-desktop), 1fr);
+
+        grid-template-rows: 241px auto 120px;
+
+        h1 {
+            grid-area: 2 / 2;
+            align-self: start;
+            justify-self: start;
+            @include font(64px, 100px);
+            text-align: start;
+        }
+
+        article {
+            grid-area: 2 / 4;
+            align-self: end;
+            justify-self: start;
+            text-align: start;
+        }
+
+        .bg-2 {
+            display: unset;
+            grid-area: 2 / 4;
+            align-self: start;
+            justify-self: start;
+            @include stripe(var(--primary-2));
+        }
+    }
 }
