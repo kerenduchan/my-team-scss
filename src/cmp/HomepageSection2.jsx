@@ -45,10 +45,10 @@ export function HomepageSection2() {
 
 function ListItem({ img, title, text }) {
     return (
-        <li>
+        <>
             <img className="icon" src={img} />
             <heading className="title primary-2">{title}</heading>
             <div className="text body-2">{text}</div>
-        </li>
+        </>
     )
 }
