@@ -1,7 +1,7 @@
 import { HomeSection1 } from '../cmp/HomeSection1'
 import { HomeSection2 } from '../cmp/HomeSection2'
 import { HomeSection3 } from '../cmp/HomeSection3'
-import { HomeSection4 } from '../cmp/HomeSection4'
+import { GetStartedSection } from '../cmp/GetStartedSection'
 
 export function Home() {
     return (
@@ -9,7 +9,7 @@ export function Home() {
             <HomeSection1 />
             <HomeSection2 />
             <HomeSection3 />
-            <HomeSection4 />
+            <GetStartedSection />
         </div>
     )
 }
