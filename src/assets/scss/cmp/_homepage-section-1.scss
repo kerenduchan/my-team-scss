@@ -10,13 +10,13 @@
     align-items: center;
     justify-items: center;
 
-    .title {
+    h1 {
         grid-area: 2 / 2;
         @include font(40px, 40px);
         text-align: center;
     }
 
-    p {
+    article {
         grid-area: 4 / 2;
         max-width: 327px;
         @include font(15px, 28px, 'semi-bold');
@@ -41,11 +41,11 @@
 
         grid-template-rows: 224px auto 24px auto 256px;
 
-        .title {
+        h1 {
             @include h1-small();
         }
 
-        p {
+        article {
             max-width: 457px;
         }
     }
@@ -63,7 +63,7 @@
 
         text-align: start;
 
-        .title {
+        h1 {
             grid-area: 2 / 2;
             justify-self: start;
             @include h1();
@@ -71,7 +71,7 @@
             width: 635px;
         }
 
-        p {
+        article {
             grid-area: 2 / 4;
             @include body-1();
             text-align: start;

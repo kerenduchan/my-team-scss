@@ -24,9 +24,7 @@ export function HomepageSection2() {
 
     return (
         <div className="homepage-section-2 bg-secondary-4">
-            <div className="title">
-                Build & manage distributed teams like no one else.
-            </div>
+            <h2>Build & manage distributed teams like no one else.</h2>
 
             <ul>
                 {items.map((item) => (
@@ -52,8 +50,8 @@ function ListItem({ img, title, text }) {
     return (
         <>
             <img className="icon" src={img} />
-            <heading className="title primary-2">{title}</heading>
-            <div className="text body-2">{text}</div>
+            <h3 className="primary-2">{title}</h3>
+            <article className="body-2">{text}</article>
         </>
     )
 }
