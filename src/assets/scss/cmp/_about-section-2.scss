@@ -1,0 +1,31 @@
+.about-section-2 {
+    display: grid;
+    @include section-gtc-narrow();
+    grid-template-rows: 88px auto 48px auto 24px auto 88px;
+    justify-items: center;
+    h2 {
+        grid-area: 2 / 2;
+        text-align: center;
+        @include font(32px, 32px);
+    }
+
+    ul {
+        grid-area: 4 / 2;
+    }
+
+    .bg-1 {
+        grid-area: 1 / 1 / -1 / -1;
+        align-self: start;
+        justify-self: start;
+        content: url('images/bg-pattern-about-2-contact-1.svg');
+        margin-top: -100px;
+        margin-inline-start: -100px;
+    }
+
+    .bg-2 {
+        grid-area: 1 / 1 / -1 / -1;
+        align-self: end;
+        justify-self: end;
+        content: url('images/bg-pattern-home-4-about-3.svg');
+    }
+}
