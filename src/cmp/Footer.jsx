@@ -2,9 +2,9 @@ import { Nav } from './Nav'
 
 export function Footer() {
     const address = `987  Hillcrest Lane
-    Irvine, CA
-    California 92714
-    Call Us : 949-833-7432`
+Irvine, CA
+California 92714
+Call Us : 949-833-7432`
 
     const social = ['facebook', 'pinterest', 'twitter']
 
