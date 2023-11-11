@@ -1,0 +1,30 @@
+footer {
+    display: grid;
+    grid-template-rows: 66px auto 24px auto 24px auto 40px auto 24px auto 64px;
+    justify-items: center;
+
+    .logo {
+        grid-area: 2 / 1;
+        height: 24px;
+    }
+
+    nav {
+        grid-area: 4 / 1;
+    }
+
+    address {
+        grid-area: 6 / 1;
+        opacity: 0.6;
+        @include body-2();
+        white-space: pre;
+        font-style: normal;
+        text-align: center;
+    }
+
+    ul {
+        grid-area: 8 / 1;
+        display: flex;
+        gap: 16px;
+        align-items: center;
+    }
+}
