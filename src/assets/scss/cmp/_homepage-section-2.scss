@@ -8,17 +8,6 @@
 
     grid-template-rows: 64px auto 32px auto 56px auto 64px;
 
-    .bg-1 {
-        grid-area: 1 / 1 / -1 / -1;
-        content: url('images/bg-pattern-home-3.svg');
-        justify-self: end;
-    }
-
-    .bg-2 {
-        grid-area: 2 / 2;
-        content: url('images/stripe-primary-2.svg');
-    }
-
     & > .title {
         grid-area: 4 / 2;
         @include font(32px, 32px);
@@ -48,6 +37,17 @@
         .text {
             grid-area: 5 / 1;
         }
+    }
+
+    .bg-1 {
+        grid-area: 1 / 1 / -1 / -1;
+        content: url('images/bg-pattern-home-3.svg');
+        justify-self: end;
+    }
+
+    .bg-2 {
+        grid-area: 2 / 2;
+        content: url('images/stripe-primary-2.svg');
     }
 
     // tablet
@@ -105,10 +105,6 @@
 
         grid-template-rows: 140px auto 54px auto 140px;
 
-        .bg-1 {
-            align-self: end;
-        }
-
         & > .title {
             grid-area: 4 / 2;
             @include h2();
@@ -117,6 +113,10 @@
         ul {
             grid-area: 4 / 4;
             max-width: 540px;
+        }
+
+        .bg-1 {
+            align-self: end;
         }
     }
 }

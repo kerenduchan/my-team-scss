@@ -1,3 +1,5 @@
+import { createDivs } from '../util'
+
 export function HomepageSection3() {
     const successStories = [
         {
@@ -22,10 +24,6 @@ export function HomepageSection3() {
 
     return (
         <div className="homepage-section-3 bg-secondary-3">
-            <img
-                className="pattern-4"
-                src="images/bg-pattern-home-4-about-3.svg"
-            />
             <div className="title">
                 Delivering real results for top companies. Some of our{' '}
                 <mark className="secondary-1">success stories</mark>.
@@ -42,7 +40,11 @@ export function HomepageSection3() {
                     </li>
                 ))}
             </ul>
-            <img className="pattern-5" src="images/bg-pattern-home-5.svg" />
+
+            {
+                /* for bg images, will be filled in css */
+                createDivs(2)
+            }
         </div>
     )
 }

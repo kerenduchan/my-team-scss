@@ -8,20 +8,10 @@
 
     grid-template-rows: 140px auto 48px auto 164px;
 
-    .pattern-4 {
-        grid-area: 1 / 1 / -1 / -1;
-    }
-
     .title {
         grid-area: 2 / 2;
         @include font(32px, 32px);
         text-align: center;
-    }
-
-    .pattern-5 {
-        grid-area: 5 / 1 / -1 / -1;
-        justify-self: end;
-        align-self: end;
     }
 
     ul {
@@ -57,5 +47,17 @@
                 outline: 2px solid #c4fffe;
             }
         }
+    }
+
+    .bg-1 {
+        grid-area: 1 / 1 / -1 / -1;
+        content: url('images/bg-pattern-home-4-about-3.svg');
+    }
+
+    .bg-2 {
+        grid-area: 5 / 1 / -1 / -1;
+        content: url('images/bg-pattern-home-5.svg');
+        justify-self: end;
+        align-self: end;
     }
 }
