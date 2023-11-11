@@ -7,7 +7,7 @@ import { Contact } from './pages/Contact'
 
 function App() {
     return (
-        <>
+        <main className="app">
             <Router>
                 <Header />
                 <Routes>
@@ -17,7 +17,7 @@ function App() {
                 </Routes>
                 <Footer />
             </Router>
-        </>
+        </main>
     )
 }
 
