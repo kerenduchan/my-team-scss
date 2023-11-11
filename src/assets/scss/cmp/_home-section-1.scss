@@ -94,7 +94,7 @@
 
         .bg-3 {
             grid-area: 2 / 4;
-            content: url('images/stripe-secondary-1.svg');
+            @include stripe(var(--secondary-1));
             align-self: start;
             justify-self: start;
         }

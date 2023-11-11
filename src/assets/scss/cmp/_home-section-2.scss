@@ -48,7 +48,7 @@
 
     .bg-2 {
         grid-area: 2 / 2;
-        content: url('images/stripe-primary-2.svg');
+        @include stripe(var(--primary-2));
     }
 
     // tablet
