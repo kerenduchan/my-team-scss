@@ -20,6 +20,10 @@ body {
     background-color: var(--primary-3);
 }
 
+section {
+    overflow: hidden;
+}
+
 mark {
     color: var(--primary-2);
     background-color: transparent;
@@ -33,11 +37,6 @@ ul {
 
 #root {
     width: 100%;
-}
-
-.app {
-    min-height: 100vh;
-    display: grid;
 }
 
 body {
