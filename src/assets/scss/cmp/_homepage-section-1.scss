@@ -9,17 +9,18 @@
 
     align-items: center;
     justify-items: center;
-    text-align: center;
 
     .title {
         grid-area: 2 / 2;
         @include font(40px, 40px);
+        text-align: center;
     }
 
     p {
         grid-area: 4 / 2;
         max-width: 327px;
         @include font(15px, 28px, 'semi-bold');
+        text-align: center;
         margin: 0;
     }
 
@@ -66,12 +67,14 @@
             grid-area: 2 / 2;
             justify-self: start;
             @include h1();
+            text-align: start;
             width: 635px;
         }
 
         p {
             grid-area: 2 / 4;
             @include body-1();
+            text-align: start;
             align-self: end;
             padding-bottom: 5px;
         }

@@ -36,6 +36,7 @@
 
         .text {
             grid-area: 5 / 1;
+            text-align: center;
         }
     }
 
@@ -90,6 +91,7 @@
 
             .text {
                 grid-area: 3 / 3;
+                text-align: start;
             }
         }
     }
