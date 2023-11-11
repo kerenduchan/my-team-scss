@@ -28,7 +28,13 @@ header {
 
     // tablet
     @media screen and (min-width: $breakpoint-tablet) {
-        grid-template-columns: 40px auto 48px 1fr 40px;
+        grid-template-columns:
+            var(--margin-x-tablet-narrow)
+            auto
+            48px
+            1fr
+            var(--margin-x-tablet-narrow);
+
         grid-template-rows: 64px auto 20px;
 
         nav {

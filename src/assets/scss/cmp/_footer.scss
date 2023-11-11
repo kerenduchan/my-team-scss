@@ -39,9 +39,9 @@ footer {
     // tablet
     @media screen and (min-width: $breakpoint-tablet) {
         grid-template-columns:
+            var(--margin-x-tablet-narrow)
             1fr
-            minmax(calc($breakpoint-tablet - 2 * var(--margin-x-tablet)), auto)
-            1fr;
+            var(--margin-x-tablet-narrow);
 
         grid-template-rows: 56px auto 32px auto 56px;
 
@@ -71,6 +71,38 @@ footer {
 
         .copyright {
             grid-area: 4 / 2;
+            justify-self: end;
+        }
+    }
+
+    // desktop
+    @media screen and (min-width: $breakpoint-desktop) {
+        grid-template-columns:
+            var(--margin-x-desktop)
+            auto
+            125px
+            445px
+            380px
+            var(--margin-x-desktop);
+
+        grid-template-rows: 48px auto 48px;
+
+        address {
+            grid-area: 2 / 4;
+            align-self: start;
+            justify-self: start;
+            text-align: start;
+        }
+
+        ul {
+            grid-area: 2 / 5;
+            align-self: start;
+            justify-self: end;
+        }
+
+        .copyright {
+            grid-area: 2 / 5;
+            align-self: end;
             justify-self: end;
         }
     }
