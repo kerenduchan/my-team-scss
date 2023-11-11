@@ -12,7 +12,7 @@
 
     article {
         grid-area: 4 / 2;
-        @include body-2();
+        @include font(15px, 28px, 'semi-bold');
         text-align: center;
         max-width: 500px;
     }
@@ -32,7 +32,15 @@
     // tablet
     @include for-normal-layout() {
         @include section-gtc-normal();
-        grid-template-rows: 224px auto 42px auto 112px;
+        grid-template-rows: 224px auto 24px auto 112px;
+
+        h1 {
+            @include h1-small();
+        }
+
+        article {
+            max-width: 457px;
+        }
 
         .bg-1 {
             margin-bottom: 0px;
@@ -48,7 +56,7 @@
             730px
             minmax(var(--margin-x-wide), 1fr);
 
-        grid-template-rows: 241px auto 120px;
+        grid-template-rows: 241px 156px 120px;
 
         h1 {
             grid-area: 2 / 2;
@@ -64,6 +72,7 @@
             justify-self: start;
             text-align: start;
             max-width: unset;
+            @include body-1();
         }
 
         .bg-2 {
