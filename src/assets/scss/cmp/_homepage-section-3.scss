@@ -7,6 +7,7 @@
         minmax(var(--margin-x-mobile), 1fr);
 
     grid-template-rows: 140px auto 48px auto 164px;
+    justify-items: center;
 
     .title {
         grid-area: 2 / 2;
@@ -51,6 +52,7 @@
 
     .bg-1 {
         grid-area: 1 / 1 / -1 / -1;
+        justify-self: start;
         content: url('images/bg-pattern-home-4-about-3.svg');
     }
 
@@ -73,6 +75,42 @@
         mark::before {
             content: '\a';
             white-space: pre;
+        }
+    }
+
+    // desktop
+    @media screen and (min-width: $breakpoint-desktop) {
+        grid-template-columns:
+            minmax(var(--margin-x-desktop), 1fr)
+            auto
+            minmax(var(--margin-x-desktop), 1fr);
+
+        grid-template-rows: 140px auto 56px auto 140px;
+
+        mark::before {
+            display: none;
+        }
+
+        .title {
+            @include h2();
+            max-width: 932px;
+        }
+
+        ul {
+            display: flex;
+            gap: 30px;
+
+            li {
+                grid-template-rows: 36px auto 24px auto 62px auto;
+
+                &:not(:last-child) {
+                    margin-bottom: 0px;
+                }
+
+                .text {
+                    max-width: 350px;
+                }
+            }
         }
     }
 }
