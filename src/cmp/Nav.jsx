@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 export function Nav() {
     const pages = [
         { name: 'home', link: '/' },
@@ -7,9 +9,9 @@ export function Nav() {
     return (
         <nav>
             {pages.map((p) => (
-                <a key={p.name} href={p.link}>
+                <Link key={p.name} to={p.link}>
                     {p.name}
-                </a>
+                </Link>
             ))}
         </nav>
     )
