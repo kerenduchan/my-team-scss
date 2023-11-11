@@ -2,12 +2,12 @@
     display: grid;
     grid-template-columns:
         minmax(var(--margin-x-mobile), 1fr)
-        327px
+        minmax(100px, 457px)
         minmax(var(--margin-x-mobile), 1fr);
 
     grid-template-rows: 160px auto 16px auto 108px;
     justify-content: center;
-    width: 100%;
+    overflow: hidden;
 
     h1 {
         grid-area: 2 / 2;
@@ -19,7 +19,6 @@
         grid-area: 4 / 2;
         @include body-2();
         text-align: center;
-        max-width: 327px;
     }
 
     .bg-1 {
@@ -29,5 +28,22 @@
         content: url('images/bg-pattern-about-1-mobile-nav-1.svg');
         margin-bottom: -100px;
         margin-inline-end: -100px;
+    }
+    .bg-2 {
+        display: none;
+    }
+
+    // tablet
+    @media screen and (min-width: $breakpoint-tablet) {
+        grid-template-columns:
+            minmax(var(--margin-x-tablet), 1fr)
+            457px
+            minmax(var(--margin-x-tablet), 1fr);
+
+        grid-template-rows: 224px auto 42px auto 112px;
+
+        .bg-1 {
+            margin-bottom: 0px;
+        }
     }
 }
