@@ -60,4 +60,19 @@
         justify-self: end;
         align-self: end;
     }
+
+    // tablet
+    @media screen and (min-width: $breakpoint-tablet) {
+        grid-template-columns:
+            minmax(var(--margin-x-tablet), 1fr)
+            auto
+            minmax(var(--margin-x-tablet), 1fr);
+
+        grid-template-rows: 100px auto 48px auto 100px;
+
+        mark::before {
+            content: '\a';
+            white-space: pre;
+        }
+    }
 }

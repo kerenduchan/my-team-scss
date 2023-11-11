@@ -26,7 +26,7 @@ export function HomepageSection3() {
         <div className="homepage-section-3 bg-secondary-3">
             <div className="title">
                 Delivering real results for top companies. Some of our{' '}
-                <mark className="secondary-1">success stories</mark>.
+                <mark className="secondary-1">success stories.</mark>
             </div>
 
             <ul>

@@ -52,7 +52,6 @@
     }
 
     // tablet
-
     @media screen and (min-width: $breakpoint-tablet) {
         grid-template-columns:
             minmax(var(--margin-x-tablet), 1fr)
