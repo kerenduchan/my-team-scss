@@ -7,7 +7,7 @@ import { Contact } from './pages/Contact'
 
 function App() {
     return (
-        <main id="app" className="main-layout">
+        <main id="app">
             <Router>
                 <Header />
                 <Routes>
