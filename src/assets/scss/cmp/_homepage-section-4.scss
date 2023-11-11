@@ -1,0 +1,30 @@
+.homepage-section-4 {
+    display: grid;
+    grid-template-columns:
+        minmax(var(--margin-x-mobile), 1fr)
+        auto
+        minmax(var(--margin-x-mobile), 1fr);
+    grid-template-rows: 83px auto 24px auto 83px;
+    justify-items: center;
+
+    heading {
+        grid-area: 2 / 2;
+        @include font(32px, 32px);
+        color: var(--secondary-4);
+        text-align: center;
+    }
+
+    button {
+        grid-area: 4 / 2;
+        color: var(--secondary-4);
+        border-color: var(--secondary-4);
+    }
+
+    .bg-1 {
+        content: url('images/bg-pattern-home-6-about-5.svg');
+        grid-area: 1 / 1 / -1 / -1;
+        justify-self: start;
+        align-self: end;
+        margin-bottom: -22px;
+    }
+}
