@@ -16,6 +16,10 @@ export function Footer() {
                     <a key={s} className={s} />
                 ))}
             </ul>
+
+            <article className="copyright">
+                Copyright 2020. All Rights Reserved
+            </article>
         </footer>
     )
 }

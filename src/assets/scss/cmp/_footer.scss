@@ -27,4 +27,10 @@ footer {
         gap: 16px;
         align-items: center;
     }
+
+    .copyright {
+        grid-area: 10 / 1;
+        opacity: 0.6;
+        @include body-2();
+    }
 }
