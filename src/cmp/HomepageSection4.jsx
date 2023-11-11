@@ -3,7 +3,7 @@ import { createDivs } from '../util'
 export function HomepageSection4() {
     return (
         <div className="homepage-section-4 bg-primary-2">
-            <heading>Ready to get started?</heading>
+            <h2>Ready to get started?</h2>
             <button>contact us</button>
 
             {

@@ -7,7 +7,7 @@
     grid-template-rows: 83px auto 24px auto 83px;
     justify-items: center;
 
-    heading {
+    h2 {
         grid-area: 2 / 2;
         @include font(32px, 32px);
         color: var(--secondary-4);

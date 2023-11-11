@@ -9,7 +9,7 @@
     grid-template-rows: 140px auto 48px auto 164px;
     justify-items: center;
 
-    .title {
+    h2 {
         grid-area: 2 / 2;
         @include font(32px, 32px);
         text-align: center;
@@ -29,12 +29,11 @@
             background-repeat: no-repeat;
             background-position: top center;
 
-            .name {
+            h3 {
                 grid-area: 4 / 1;
-                @include h3();
             }
 
-            .text {
+            blockquote {
                 grid-area: 2 / 1;
                 display: grid;
                 text-align: center;
@@ -91,7 +90,7 @@
             display: none;
         }
 
-        .title {
+        h2 {
             @include h2();
             max-width: 932px;
         }
@@ -107,7 +106,7 @@
                     margin-bottom: 0px;
                 }
 
-                .text {
+                blockquote {
                     max-width: 350px;
                 }
             }

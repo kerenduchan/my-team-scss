@@ -24,10 +24,10 @@ export function HomepageSection3() {
 
     return (
         <div className="homepage-section-3 bg-secondary-3">
-            <div className="title">
+            <h2>
                 Delivering real results for top companies. Some of our{' '}
                 <mark className="secondary-1">success stories.</mark>
-            </div>
+            </h2>
 
             <ul>
                 {successStories.map((story) => (
@@ -52,8 +52,8 @@ export function HomepageSection3() {
 function SuccessStory({ name, avatar, text }) {
     return (
         <>
-            <p className="text body-2">“{text}”</p>
-            <heading className="name secondary-1">{name}</heading>
+            <blockquote className="text body-2">“{text}”</blockquote>
+            <h3 className="secondary-1">{name}</h3>
             <img className="avatar" src={avatar} />
         </>
     )
