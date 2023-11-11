@@ -1,3 +1,5 @@
+import { Nav } from './Nav'
+
 export function Footer() {
     const address = `987  Hillcrest Lane
     Irvine, CA
@@ -9,7 +11,7 @@ export function Footer() {
     return (
         <footer className="bg-secondary-5">
             <img className="logo" src="images/logo.svg" alt="myteam" />
-            <nav>nav</nav>
+            <Nav />
             <address>{address}</address>
             <ul>
                 {social.map((s) => (

@@ -1,11 +1,10 @@
+import { Nav } from './Nav'
+
 export function Header() {
     return (
         <header className="bg-primary-3">
             <img className="logo" src="images/logo.svg" alt="myteam" />
-            <nav>
-                <a>home</a>
-                <a>about</a>
-            </nav>
+            <Nav />
             <button className="contact-us">contact us</button>
             <img src="images/icon-hamburger.svg" className="hamburger" />
         </header>
