@@ -14,11 +14,26 @@ export function AboutSection2() {
             <h2>Meet the directors</h2>
             <ul>
                 {directors.map((d) => (
-                    <li>
+                    <li className="bg-secondary-4">
                         <Director name={d.name} avatar={d.avatar} />
                     </li>
                 ))}
             </ul>
+
+            <div className="quote-box bg-secondary-5">
+                <h3 className="secondary-1">Aden Allen</h3>
+                <blockquote>
+                    “Empowered teams create truly amazing products. Set the
+                    north star and let them follow it.”
+                </blockquote>
+                <button className="circle-button bg-secondary-1">
+                    <img
+                        src="images/icon-cross.svg"
+                        alt="close"
+                        className="secondary-4"
+                    />
+                </button>
+            </div>
 
             {
                 /* for bg images, will be filled in css */

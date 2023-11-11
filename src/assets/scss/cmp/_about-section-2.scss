@@ -1,7 +1,7 @@
 .about-section-2 {
     display: grid;
     grid-template-columns: var(--margin-x-narrow) 1fr var(--margin-x-narrow);
-    grid-template-rows: 88px auto 48px auto 24px auto 88px;
+    grid-template-rows: 88px auto 48px auto 52px auto 116px;
     justify-items: center;
 
     h2 {
@@ -20,7 +20,6 @@
         li {
             display: grid;
             grid-template-rows: 32px minmax(min-content, max-content) 16px auto;
-            background-color: var(--secondary-4);
             height: 253px;
             justify-items: center;
 
@@ -42,6 +41,33 @@
             h3 {
                 grid-area: 4 / 1;
             }
+        }
+    }
+
+    .quote-box {
+        grid-area: 6 / 2;
+        display: grid;
+        grid-template-rows: 35px auto 8px auto 24px auto 63px;
+        height: 253px;
+        width: 100%;
+        justify-items: center;
+
+        h3 {
+            grid-area: 2 / 1;
+        }
+
+        blockquote {
+            grid-area: 4 / 1;
+            @include body-2();
+            max-width: 235px;
+            text-align: center;
+        }
+
+        .circle-button {
+            grid-area: -1 / 1;
+            align-self: end;
+            margin: -28px;
+            transform: rotateY(0deg) rotate(45deg);
         }
     }
 
