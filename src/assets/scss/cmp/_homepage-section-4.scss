@@ -18,8 +18,7 @@
 
     button {
         grid-area: 4 / 2;
-        color: var(--secondary-4);
-        border-color: var(--secondary-4);
+        @include button-colors(var(--secondary-4), var(--primary-2));
     }
 
     .bg-1 {

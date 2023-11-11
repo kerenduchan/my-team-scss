@@ -45,6 +45,7 @@ header {
             display: unset;
             grid-area: 2 / 4;
             justify-self: end;
+            @include button-colors(var(--primary-1), var(--primary-3));
         }
 
         .hamburger {
