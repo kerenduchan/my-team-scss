@@ -23,7 +23,7 @@ export function HomeSection3() {
     ]
 
     return (
-        <div className="home-section-3 bg-secondary-3">
+        <section className="home-section-3 bg-secondary-3">
             <h2>
                 Delivering real results for top companies. Some of our{' '}
                 <mark className="secondary-1">success stories.</mark>
@@ -45,7 +45,7 @@ export function HomeSection3() {
                 /* for bg images, will be filled in css */
                 createDivs(2)
             }
-        </div>
+        </section>
     )
 }
 

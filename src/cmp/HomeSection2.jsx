@@ -23,7 +23,7 @@ export function HomeSection2() {
     ]
 
     return (
-        <div className="home-section-2 bg-secondary-4">
+        <section className="home-section-2 bg-secondary-4">
             <h2>Build & manage distributed teams like no one else.</h2>
 
             <ul>
@@ -42,7 +42,7 @@ export function HomeSection2() {
                 /* for bg images, will be filled in css */
                 createDivs(2)
             }
-        </div>
+        </section>
     )
 }
 

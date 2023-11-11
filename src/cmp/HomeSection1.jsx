@@ -2,7 +2,7 @@ import { createDivs } from '../util'
 
 export function HomeSection1() {
     return (
-        <div className="home-section-1 bg-primary-3">
+        <section className="home-section-1 bg-primary-3">
             <h1>
                 Find the
                 <br /> best <mark>talent</mark>
@@ -17,6 +17,6 @@ export function HomeSection1() {
                 /* for bg images, will be filled in css */
                 createDivs(3)
             }
-        </div>
+        </section>
     )
 }

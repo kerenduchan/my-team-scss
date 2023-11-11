@@ -9,7 +9,7 @@ export function HomeSection4() {
     }
 
     return (
-        <div className="home-section-4 bg-primary-2">
+        <section className="home-section-4 bg-primary-2">
             <h2>Ready to get started?</h2>
             <button onClick={onContactUsClick}>contact us</button>
 
@@ -17,6 +17,6 @@ export function HomeSection4() {
                 /* for bg images, will be filled in css */
                 createDivs(1)
             }
-        </div>
+        </section>
     )
 }
