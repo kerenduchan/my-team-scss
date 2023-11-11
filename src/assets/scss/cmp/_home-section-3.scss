@@ -14,11 +14,11 @@
     ul {
         grid-area: 4 / 2;
         max-width: 327px;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
 
         li {
-            &:not(:last-child) {
-                margin-bottom: 48px;
-            }
             display: grid;
             grid-template-rows: 36px auto 16px auto 36px auto;
             justify-items: center;
@@ -90,15 +90,12 @@
 
         ul {
             display: flex;
+            flex-direction: row;
             gap: 30px;
             max-width: unset;
 
             li {
                 grid-template-rows: 36px auto 24px auto 52px auto;
-
-                &:not(:last-child) {
-                    margin-bottom: 0px;
-                }
 
                 blockquote {
                     max-width: 350px;

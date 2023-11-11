@@ -13,12 +13,12 @@
         grid-area: 6 / 2;
         @include flex-column-center();
         max-width: 327px;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
     }
 
     li {
-        &:not(:last-child) {
-            margin-bottom: 48px;
-        }
         display: grid;
         grid-template-rows: auto 16px auto 8px auto;
         justify-items: center;
@@ -58,6 +58,7 @@
 
         ul {
             max-width: 573px;
+            gap: 32px;
         }
 
         li {
@@ -65,10 +66,6 @@
             grid-template-columns: 72px 23px 1fr;
             grid-template-rows: auto 16px auto;
             text-align: start;
-
-            &:not(:last-child) {
-                margin-bottom: 32px;
-            }
 
             .icon {
                 grid-area: 1 / 1 / -1;
