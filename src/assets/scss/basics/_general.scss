@@ -39,3 +39,43 @@ ul {
     min-height: 100vh;
     display: grid;
 }
+
+body {
+    font-family: var(--bold-font), sans-serif;
+}
+
+.body-1 {
+    @include body-1();
+}
+
+.body-2 {
+    @include body-2();
+}
+
+h1 {
+    @include h1();
+
+    .small {
+        @include h1-small();
+    }
+}
+
+h2 {
+    @include h2();
+}
+
+h3 {
+    @include h3();
+}
+
+$button-height: 48px;
+
+button {
+    box-sizing: border-box;
+    height: $button-height;
+    width: 153px;
+    border-radius: calc($button-height / 2);
+    text-align: center;
+    @include body-1();
+    @include button-colors(var(--primary-1), var(--secondary-5));
+}

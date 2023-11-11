@@ -1,0 +1,62 @@
+// layout mixins
+
+@mixin flex-column-center() {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+// component styling mixins
+
+@mixin button-colors($color1, $color2) {
+    background-color: $color2;
+    color: $color1;
+    border: 2px solid $color1;
+
+    &:hover {
+        background-color: $color1;
+        color: $color2;
+    }
+}
+
+@mixin stripe($color) {
+    background-color: $color;
+    width: 50px;
+    height: 4px;
+}
+
+// font/text mixins
+
+@mixin font($size, $line-height, $weight: bold) {
+    @if $weight == bold {
+        font-family: var(--bold-font);
+    } @else {
+        font-family: var(--semi-bold-font);
+    }
+    font-size: $size;
+    line-height: $line-height;
+}
+
+@mixin h1() {
+    @include font(100px, 100px);
+}
+
+@mixin h1-small() {
+    @include font(64px, 56px);
+}
+
+@mixin h2() {
+    @include font(48px, 48px);
+}
+
+@mixin h3() {
+    @include font(18px, 28px);
+}
+
+@mixin body-1() {
+    @include font(18px, 28px, 'semi-bold');
+}
+
+@mixin body-2() {
+    @include font(15px, 25px, 'semi-bold');
+}

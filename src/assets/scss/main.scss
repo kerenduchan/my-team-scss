@@ -1,11 +1,12 @@
+// SETUP
 @import 'setup/typography';
+@import 'setup/variables';
+@import 'setup/mixins';
+@import 'setup/functions';
 
-@import 'basics/variables';
 @import 'basics/general';
 @import 'basics/layout';
-@import 'basics/spacing';
 @import 'basics/text';
-@import 'basics/buttons';
 @import 'basics/colors';
 @import 'basics/socials';
 @import 'basics/misc';
