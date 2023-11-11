@@ -35,4 +35,43 @@ footer {
         opacity: 0.6;
         @include body-2();
     }
+
+    // tablet
+    @media screen and (min-width: $breakpoint-tablet) {
+        grid-template-columns:
+            1fr
+            minmax(calc($breakpoint-tablet - 2 * var(--margin-x-tablet)), auto)
+            1fr;
+
+        grid-template-rows: 56px auto 32px auto 56px;
+
+        .logo {
+            grid-area: 2 / 2;
+            justify-self: start;
+            align-self: start;
+        }
+
+        nav {
+            grid-area: 2 / 2;
+            justify-self: start;
+            align-self: end;
+        }
+
+        address {
+            grid-area: 2 / 2;
+            align-self: end;
+            justify-self: end;
+            text-align: end;
+        }
+
+        ul {
+            grid-area: 4 / 2;
+            justify-self: start;
+        }
+
+        .copyright {
+            grid-area: 4 / 2;
+            justify-self: end;
+        }
+    }
 }
