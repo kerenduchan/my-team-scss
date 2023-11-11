@@ -6,6 +6,7 @@
         minmax(var(--margin-x-mobile), 1fr);
     grid-template-rows: 83px auto 24px auto 83px;
     justify-items: center;
+    overflow-y: hidden;
 
     h2 {
         grid-area: 2 / 2;

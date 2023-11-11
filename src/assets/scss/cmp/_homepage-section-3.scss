@@ -17,6 +17,7 @@
 
     ul {
         grid-area: 4 / 2;
+        max-width: 327px;
 
         li {
             &:not(:last-child) {
@@ -75,6 +76,10 @@
             content: '\a';
             white-space: pre;
         }
+
+        ul {
+            max-width: 573px;
+        }
     }
 
     // desktop
@@ -98,6 +103,7 @@
         ul {
             display: flex;
             gap: 30px;
+            max-width: unset;
 
             li {
                 grid-template-rows: 36px auto 24px auto 62px auto;
