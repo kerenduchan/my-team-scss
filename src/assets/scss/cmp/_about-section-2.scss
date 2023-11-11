@@ -1,8 +1,9 @@
 .about-section-2 {
     display: grid;
-    @include section-gtc-narrow();
+    grid-template-columns: var(--margin-x-narrow) 1fr var(--margin-x-narrow);
     grid-template-rows: 88px auto 48px auto 24px auto 88px;
     justify-items: center;
+
     h2 {
         grid-area: 2 / 2;
         text-align: center;
@@ -11,6 +12,37 @@
 
     ul {
         grid-area: 4 / 2;
+        display: flex;
+        flex-direction: column;
+        gap: 52px;
+        width: 100%;
+
+        li {
+            display: grid;
+            grid-template-rows: 32px minmax(min-content, max-content) 16px auto;
+            background-color: var(--secondary-4);
+            height: 253px;
+            justify-items: center;
+
+            .avatar {
+                grid-area: 2 / 1;
+                height: 96px;
+                aspect-ratio: 1 / 1;
+                outline: 2px solid #c4fffe;
+                border-radius: 50%;
+            }
+
+            .circle-button {
+                grid-area: -1 / 1;
+                align-self: end;
+                margin: -28px;
+                background-color: var(--primary-2);
+            }
+
+            h3 {
+                grid-area: 4 / 1;
+            }
+        }
     }
 
     .bg-1 {

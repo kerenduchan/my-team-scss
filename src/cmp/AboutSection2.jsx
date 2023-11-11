@@ -31,8 +31,15 @@ export function AboutSection2() {
 function Director({ name, avatar }) {
     return (
         <>
-            <h3>{name}</h3>
+            <h3 className="secondary-1">{name}</h3>
             <img className="avatar" src={avatar} />
+            <button className="circle-button">
+                <img
+                    src="images/icon-cross.svg"
+                    alt="more"
+                    className="secondary-4"
+                />
+            </button>
         </>
     )
 }
