@@ -1,0 +1,33 @@
+.about-section-1 {
+    display: grid;
+    grid-template-columns:
+        minmax(var(--margin-x-mobile), 1fr)
+        327px
+        minmax(var(--margin-x-mobile), 1fr);
+
+    grid-template-rows: 160px auto 16px auto 108px;
+    justify-content: center;
+    width: 100%;
+
+    h1 {
+        grid-area: 2 / 2;
+        @include font(40px, 40px);
+        text-align: center;
+    }
+
+    article {
+        grid-area: 4 / 2;
+        @include body-2();
+        text-align: center;
+        max-width: 327px;
+    }
+
+    .bg-1 {
+        grid-area: 1 / 1 / -1 / -1;
+        align-self: end;
+        justify-self: end;
+        content: url('images/bg-pattern-about-1-mobile-nav-1.svg');
+        margin-bottom: -100px;
+        margin-inline-end: -100px;
+    }
+}

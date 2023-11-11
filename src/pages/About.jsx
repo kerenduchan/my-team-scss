@@ -1,3 +1,9 @@
+import { AboutSection1 } from '../cmp/AboutSection1'
+
 export function About() {
-    return <div>about</div>
+    return (
+        <>
+            <AboutSection1 />
+        </>
+    )
 }
