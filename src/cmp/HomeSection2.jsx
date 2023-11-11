@@ -1,6 +1,6 @@
 import { createDivs } from '../util'
 
-export function HomepageSection2() {
+export function HomeSection2() {
     const items = [
         {
             id: 1,
@@ -23,7 +23,7 @@ export function HomepageSection2() {
     ]
 
     return (
-        <div className="homepage-section-2 bg-secondary-4">
+        <div className="home-section-2 bg-secondary-4">
             <h2>Build & manage distributed teams like no one else.</h2>
 
             <ul>

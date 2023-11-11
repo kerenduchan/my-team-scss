@@ -1,15 +1,15 @@
-import { HomepageSection1 } from '../cmp/HomepageSection1'
-import { HomepageSection2 } from '../cmp/HomepageSection2'
-import { HomepageSection3 } from '../cmp/HomepageSection3'
-import { HomepageSection4 } from '../cmp/HomepageSection4'
+import { HomeSection1 } from '../cmp/HomeSection1'
+import { HomeSection2 } from '../cmp/HomeSection2'
+import { HomeSection3 } from '../cmp/HomeSection3'
+import { HomeSection4 } from '../cmp/HomeSection4'
 
 export function Home() {
     return (
         <div className="home">
-            <HomepageSection1 />
-            <HomepageSection2 />
-            <HomepageSection3 />
-            <HomepageSection4 />
+            <HomeSection1 />
+            <HomeSection2 />
+            <HomeSection3 />
+            <HomeSection4 />
         </div>
     )
 }
