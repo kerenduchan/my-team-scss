@@ -49,4 +49,20 @@
             justify-self: end;
         }
     }
+
+    // desktop
+    @media screen and (min-width: $breakpoint-desktop) {
+        grid-template-columns:
+            1fr
+            917px
+            1fr;
+
+        h2 {
+            @include h2();
+        }
+
+        .bg-1 {
+            margin-bottom: 0;
+        }
+    }
 }
