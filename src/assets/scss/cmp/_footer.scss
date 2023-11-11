@@ -38,7 +38,7 @@ footer {
     }
 
     // tablet
-    @media screen and (min-width: $breakpoint-tablet) {
+    @include for-normal-layout() {
         grid-template-columns:
             var(--margin-x-tablet-narrow)
             1fr
@@ -77,7 +77,7 @@ footer {
     }
 
     // desktop
-    @media screen and (min-width: $breakpoint-desktop) {
+    @include for-wide-layout() {
         grid-template-columns:
             var(--margin-x-desktop)
             auto

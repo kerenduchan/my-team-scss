@@ -30,10 +30,10 @@
     }
 
     // tablet
-    @media screen and (min-width: $breakpoint-tablet) {
+    @include for-normal-layout() {
         grid-template-columns:
             1fr
-            calc($breakpoint-tablet - 2 * var(--margin-x-tablet))
+            calc($break-normal - 2 * var(--margin-x-tablet))
             1fr;
 
         grid-template-rows: 76px auto 76px;
@@ -50,7 +50,7 @@
     }
 
     // desktop
-    @media screen and (min-width: $breakpoint-desktop) {
+    @include for-wide-layout() {
         grid-template-columns:
             1fr
             917px

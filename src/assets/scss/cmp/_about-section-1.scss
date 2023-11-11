@@ -34,7 +34,7 @@
     }
 
     // tablet
-    @media screen and (min-width: $breakpoint-tablet) {
+    @include for-normal-layout() {
         grid-template-columns:
             minmax(var(--margin-x-tablet), 1fr)
             457px
@@ -48,7 +48,7 @@
     }
 
     // desktop
-    @media screen and (min-width: $breakpoint-desktop) {
+    @include for-wide-layout() {
         grid-template-columns:
             minmax(var(--margin-x-desktop), 1fr)
             350px

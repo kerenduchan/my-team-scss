@@ -1,3 +1,17 @@
+// media query breakpoint mixins
+
+@mixin for-normal-layout {
+    @media (min-width: $break-normal) {
+        @content;
+    }
+}
+
+@mixin for-wide-layout {
+    @media (min-width: $break-wide) {
+        @content;
+    }
+}
+
 // layout mixins
 
 @mixin flex-column-center() {
