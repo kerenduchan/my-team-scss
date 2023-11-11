@@ -23,19 +23,12 @@
         margin: 0;
     }
 
-    .pattern-2 {
+    .bg-1 {
+        content: url('images/bg-pattern-home-2.svg');
         grid-area: 1 / 1 / -1 / -1;
         align-self: end;
         justify-self: center;
         max-width: 100%;
-    }
-
-    .pattern-1 {
-        display: none;
-    }
-
-    .stripe {
-        display: none;
     }
 
     // tablet
@@ -69,25 +62,11 @@
 
         text-align: start;
 
-        .pattern-1 {
-            grid-area: 2 / 1 / -1 / -1;
-            display: unset;
-            align-self: start;
-            justify-self: start;
-        }
-
         .title {
             grid-area: 2 / 2;
             justify-self: start;
             @include h1();
             width: 635px;
-        }
-
-        .stripe {
-            display: unset;
-            grid-area: 2 / 4;
-            align-self: start;
-            justify-self: start;
         }
 
         p {
@@ -97,9 +76,25 @@
             padding-bottom: 5px;
         }
 
-        .pattern-2 {
+        .bg-1 {
             grid-area: 3 / 1 / -1 / span 4;
             justify-self: end;
+        }
+
+        .bg-2 {
+            content: url('images/bg-pattern-home-1.svg');
+            grid-area: 2 / 1 / -1 / -1;
+            display: unset;
+            align-self: start;
+            justify-self: start;
+        }
+
+        .bg-3 {
+            content: url('images/stripe-secondary-1.svg');
+            display: unset;
+            grid-area: 2 / 4;
+            align-self: start;
+            justify-self: start;
         }
     }
 }
