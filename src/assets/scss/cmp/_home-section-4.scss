@@ -1,10 +1,6 @@
 .home-section-4 {
     display: grid;
-    grid-template-columns:
-        minmax(var(--margin-x-mobile), 1fr)
-        auto
-        minmax(var(--margin-x-mobile), 1fr);
-
+    @include section-gtc-narrow();
     grid-template-rows: 83px auto 24px auto 83px;
     justify-items: center;
 
@@ -30,16 +26,13 @@
 
     // tablet
     @include for-normal-layout() {
-        grid-template-columns:
-            1fr
-            calc($break-normal - 2 * var(--margin-x-tablet))
-            1fr;
-
+        @include section-gtc-normal();
         grid-template-rows: 76px auto 76px;
         align-items: center;
 
         h2 {
-            justify-self: start;
+            text-align: start;
+            min-width: 573px;
         }
 
         button {
@@ -57,6 +50,7 @@
 
         h2 {
             @include h2();
+            justify-self: start;
         }
 
         .bg-1 {

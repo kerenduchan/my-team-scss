@@ -12,6 +12,25 @@
     }
 }
 
+@mixin section-gtc($margin-x, $center-column: auto) {
+    grid-template-columns:
+        minmax($margin-x, 1fr)
+        $center-column
+        minmax($margin-x, 1fr);
+}
+
+@mixin section-gtc-narrow() {
+    @include section-gtc(var(--margin-x-mobile));
+}
+
+@mixin section-gtc-normal() {
+    @include section-gtc(var(--margin-x-tablet));
+}
+
+@mixin section-gtc-wide() {
+    @include section-gtc(var(--margin-x-desktop));
+}
+
 // layout mixins
 
 @mixin flex-column-center() {

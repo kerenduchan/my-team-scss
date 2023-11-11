@@ -1,12 +1,7 @@
 .home-section-1 {
     display: grid;
-    grid-template-columns:
-        minmax(var(--margin-x-mobile), 1fr)
-        auto
-        minmax(var(--margin-x-mobile), 1fr);
-
+    @include section-gtc-narrow();
     grid-template-rows: 160px auto 18px auto 197px;
-
     align-items: center;
     justify-items: center;
 
@@ -34,11 +29,7 @@
 
     // tablet
     @include for-normal-layout() {
-        grid-template-columns:
-            minmax(var(--margin-x-tablet), 1fr)
-            auto
-            minmax(var(--margin-x-tablet), 1fr);
-
+        @include section-gtc-normal();
         grid-template-rows: 224px auto 24px auto 256px;
 
         h1 {

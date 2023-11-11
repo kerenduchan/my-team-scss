@@ -1,10 +1,6 @@
 .home-section-3 {
     display: grid;
-
-    grid-template-columns:
-        minmax(var(--margin-x-mobile), 1fr)
-        auto
-        minmax(var(--margin-x-mobile), 1fr);
+    @include section-gtc-narrow();
 
     grid-template-rows: 140px auto 48px auto 164px;
     justify-items: center;
@@ -36,7 +32,6 @@
 
             blockquote {
                 grid-area: 2 / 1;
-                display: grid;
                 text-align: center;
             }
 
@@ -65,10 +60,7 @@
 
     // tablet
     @include for-normal-layout() {
-        grid-template-columns:
-            minmax(var(--margin-x-tablet), 1fr)
-            auto
-            minmax(var(--margin-x-tablet), 1fr);
+        @include section-gtc-normal();
 
         grid-template-rows: 100px auto 48px auto 100px;
 
@@ -84,12 +76,8 @@
 
     // desktop
     @include for-wide-layout() {
-        grid-template-columns:
-            minmax(var(--margin-x-desktop), 1fr)
-            auto
-            minmax(var(--margin-x-desktop), 1fr);
-
-        grid-template-rows: 140px auto 56px auto 140px;
+        @include section-gtc-wide();
+        grid-template-rows: 140px auto 56px auto 151px;
 
         mark::before {
             display: none;
@@ -106,7 +94,7 @@
             max-width: unset;
 
             li {
-                grid-template-rows: 36px auto 24px auto 62px auto;
+                grid-template-rows: 36px auto 24px auto 52px auto;
 
                 &:not(:last-child) {
                     margin-bottom: 0px;

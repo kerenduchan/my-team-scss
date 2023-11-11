@@ -1,11 +1,6 @@
 .home-section-2 {
     display: grid;
-
-    grid-template-columns:
-        minmax(var(--margin-x-mobile), 1fr)
-        auto
-        minmax(var(--margin-x-mobile), 1fr);
-
+    @include section-gtc-narrow();
     grid-template-rows: 64px auto 32px auto 56px auto 64px;
 
     & > h2 {
@@ -44,6 +39,7 @@
         grid-area: 1 / 1 / -1 / -1;
         content: url('images/bg-pattern-home-3.svg');
         justify-self: end;
+        margin-inline-end: -100px;
     }
 
     .bg-2 {
@@ -53,11 +49,7 @@
 
     // tablet
     @include for-normal-layout() {
-        grid-template-columns:
-            minmax(var(--margin-x-tablet), 1fr)
-            auto
-            minmax(var(--margin-x-tablet), 1fr);
-
+        @include section-gtc-normal();
         grid-template-rows: 100px auto 32px auto 64px auto 100px;
 
         & > h2 {
@@ -118,7 +110,6 @@
 
         .bg-1 {
             align-self: end;
-            margin-inline-end: -100px;
         }
     }
 }
