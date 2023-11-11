@@ -24,8 +24,8 @@
     }
 
     .bg-1 {
-        content: url('images/bg-pattern-home-2.svg');
         grid-area: 1 / 1 / -1 / -1;
+        content: url('images/bg-pattern-home-2.svg');
         align-self: end;
         justify-self: center;
         max-width: 100%;
@@ -82,17 +82,15 @@
         }
 
         .bg-2 {
-            content: url('images/bg-pattern-home-1.svg');
             grid-area: 2 / 1 / -1 / -1;
-            display: unset;
+            content: url('images/bg-pattern-home-1.svg');
             align-self: start;
             justify-self: start;
         }
 
         .bg-3 {
-            content: url('images/stripe-secondary-1.svg');
-            display: unset;
             grid-area: 2 / 4;
+            content: url('images/stripe-secondary-1.svg');
             align-self: start;
             justify-self: start;
         }

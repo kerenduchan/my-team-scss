@@ -8,13 +8,15 @@
 
     grid-template-rows: 64px auto 32px auto 56px auto 64px;
 
-    .pattern-3 {
+    .bg-1 {
         grid-area: 1 / 1 / -1 / -1;
+        content: url('images/bg-pattern-home-3.svg');
         justify-self: end;
     }
 
-    .stripe {
+    .bg-2 {
         grid-area: 2 / 2;
+        content: url('images/stripe-primary-2.svg');
     }
 
     & > .title {
@@ -103,7 +105,7 @@
 
         grid-template-rows: 140px auto 54px auto 140px;
 
-        .pattern-3 {
+        .bg-1 {
             align-self: end;
         }
 
