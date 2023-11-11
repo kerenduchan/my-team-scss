@@ -4,6 +4,7 @@
         minmax(var(--margin-x-mobile), 1fr)
         auto
         minmax(var(--margin-x-mobile), 1fr);
+
     grid-template-rows: 83px auto 24px auto 83px;
     justify-items: center;
     overflow-y: hidden;
@@ -27,5 +28,25 @@
         justify-self: start;
         align-self: end;
         margin-bottom: -22px;
+    }
+
+    // tablet
+    @media screen and (min-width: $breakpoint-tablet) {
+        grid-template-columns:
+            1fr
+            calc($breakpoint-tablet - 2 * var(--margin-x-tablet))
+            1fr;
+
+        grid-template-rows: 76px auto 76px;
+        align-items: center;
+
+        h2 {
+            justify-self: start;
+        }
+
+        button {
+            grid-area: 2 / 2;
+            justify-self: end;
+        }
     }
 }
