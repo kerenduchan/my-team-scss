@@ -11,12 +11,10 @@ function App() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
     function onOpenMenu() {
-        console.log('on open')
         setIsMenuOpen(true)
     }
 
     function onCloseMenu() {
-        console.log('on close')
         setIsMenuOpen(false)
     }
 
