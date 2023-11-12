@@ -26,10 +26,20 @@
         grid-area: 4 / 1;
         color: var(--secondary-1);
     }
+
+    blockquote {
+        display: none;
+    }
 }
 
 .director.open {
+    grid-template-rows: 35px minmax(min-content, max-content) 8px auto;
     background-color: var(--secondary-5);
+
+    h3 {
+        grid-area: 2 / 1;
+    }
+
     .avatar {
         display: none;
     }
@@ -37,5 +47,11 @@
     .circle-button {
         transform: rotateY(0deg) rotate(45deg);
         background-color: var(--secondary-1);
+    }
+
+    blockquote {
+        display: unset;
+        grid-area: 4 / 1;
+        max-width: 233px;
     }
 }

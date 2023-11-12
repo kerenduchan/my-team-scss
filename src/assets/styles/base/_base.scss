@@ -29,6 +29,11 @@ mark {
     background-color: transparent;
 }
 
+blockquote {
+    @include body-2();
+    text-align: center;
+}
+
 blockquote::before {
     content: '“';
 }

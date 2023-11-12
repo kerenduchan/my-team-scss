@@ -3,12 +3,36 @@ import { DirectorCard } from './DirectorCard'
 
 export function About2() {
     const directors = [
-        { name: 'Nikita Marks', avatar: 'images/avatar-nikita.jpg' },
-        { name: 'Cristian Duncan', avatar: 'images/avatar-christian.jpg' },
-        { name: 'Cruz Hamer', avatar: 'images/avatar-cruz.jpg' },
-        { name: 'Drake Heaton', avatar: 'images/avatar-drake.jpg' },
-        { name: 'Griffin Wise', avatar: 'images/avatar-griffin.jpg' },
-        { name: 'Aden Allen', avatar: 'images/avatar-griffin.jpg' },
+        {
+            name: 'Nikita Marks',
+            avatar: 'images/avatar-nikita.jpg',
+            quote: "Nikita's quote",
+        },
+        {
+            name: 'Cristian Duncan',
+            avatar: 'images/avatar-christian.jpg',
+            quote: "Cristian's quote",
+        },
+        {
+            name: 'Cruz Hamer',
+            avatar: 'images/avatar-cruz.jpg',
+            quote: "Cruz's quote",
+        },
+        {
+            name: 'Drake Heaton',
+            avatar: 'images/avatar-drake.jpg',
+            quote: "Drake's quote",
+        },
+        {
+            name: 'Griffin Wise',
+            avatar: 'images/avatar-griffin.jpg',
+            quote: 'Unique perspectives shape unique products, which is what you need to survive these days.',
+        },
+        {
+            name: 'Aden Allen',
+            avatar: 'images/avatar-griffin.jpg',
+            quote: 'Empowered teams create truly amazing products. Set the north star and let them follow it.',
+        },
     ]
 
     const socials = ['twitter', 'linkedin']
