@@ -1,6 +1,6 @@
-.home-section-3 {
+.home-3 {
     display: grid;
-    @include section-gtc-narrow();
+    @include gtc-narrow();
 
     grid-template-rows: 140px auto 48px auto 164px;
     justify-items: center;
@@ -60,7 +60,7 @@
 
     // tablet
     @include for-normal-layout() {
-        @include section-gtc-normal();
+        @include gtc-normal();
 
         grid-template-rows: 100px auto 48px auto 100px;
 
@@ -76,7 +76,7 @@
 
     // desktop
     @include for-wide-layout() {
-        @include section-gtc-wide();
+        @include gtc-wide();
         grid-template-rows: 140px auto 56px auto 151px;
 
         mark::before {

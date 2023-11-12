@@ -1,6 +1,6 @@
-.get-started-section {
+.get-started {
     display: grid;
-    @include section-gtc-narrow();
+    @include gtc-narrow();
     grid-template-rows: 83px auto 24px auto 83px;
     justify-items: center;
 
@@ -26,7 +26,7 @@
 
     // tablet
     @include for-normal-layout() {
-        @include section-gtc-normal();
+        @include gtc-normal();
         grid-template-rows: 76px auto 76px;
         align-items: center;
 

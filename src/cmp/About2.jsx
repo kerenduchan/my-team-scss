@@ -1,6 +1,6 @@
 import { createDivs } from '../util'
 
-export function AboutSection2() {
+export function About2() {
     const directors = [
         { name: 'Nikita Marks', avatar: 'images/avatar-nikita.jpg' },
         { name: 'Cristian Duncan', avatar: 'images/avatar-christian.jpg' },
@@ -12,7 +12,7 @@ export function AboutSection2() {
     const socials = ['twitter', 'linkedin']
 
     return (
-        <section className="about-section-2 bg-secondary-3">
+        <section className="about-2 bg-secondary-3">
             <h2>Meet the directors</h2>
             <ul className="directors">
                 {directors.map((d) => (

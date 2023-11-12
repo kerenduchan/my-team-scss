@@ -1,9 +1,8 @@
-.home-section-1 {
+.about-1 {
     display: grid;
-    @include section-gtc-narrow();
-    grid-template-rows: 160px auto 18px auto 197px;
-    align-items: center;
-    justify-items: center;
+    @include gtc-narrow();
+    grid-template-rows: 160px auto 16px auto 108px;
+    justify-content: center;
 
     h1 {
         grid-area: 2 / 2;
@@ -13,24 +12,27 @@
 
     article {
         grid-area: 4 / 2;
-        max-width: 327px;
         @include font(15px, 28px, 'semi-bold');
         text-align: center;
-        margin: 0;
+        max-width: 500px;
     }
 
     .bg-1 {
         grid-area: 1 / 1 / -1 / -1;
-        content: url('images/bg-pattern-home-2.svg');
         align-self: end;
-        justify-self: center;
-        max-width: 100%;
+        justify-self: end;
+        content: url('images/bg-pattern-about-1-mobile-nav-1.svg');
+        margin-bottom: -100px;
+        margin-inline-end: -100px;
+    }
+    .bg-2 {
+        display: none;
     }
 
     // tablet
     @include for-normal-layout() {
-        @include section-gtc-normal();
-        grid-template-rows: 224px auto 24px auto 256px;
+        @include gtc-normal();
+        grid-template-rows: 224px auto 24px auto 112px;
 
         h1 {
             @include h1-small();
@@ -39,55 +41,46 @@
         article {
             max-width: 457px;
         }
+
+        .bg-1 {
+            margin-bottom: 0px;
+        }
     }
 
     // desktop
     @include for-wide-layout() {
         grid-template-columns:
             minmax(var(--margin-x-wide), 1fr)
-            auto
+            350px
             30px
-            auto
+            730px
             minmax(var(--margin-x-wide), 1fr);
 
-        grid-template-rows: 250px auto 250px;
-
-        text-align: start;
+        grid-template-rows: 241px 156px 120px;
 
         h1 {
             grid-area: 2 / 2;
+            align-self: start;
             justify-self: start;
-            @include h1();
+            @include font(64px, 100px);
             text-align: start;
-            width: 635px;
         }
 
         article {
             grid-area: 2 / 4;
-            @include body-1();
-            text-align: start;
             align-self: end;
-            padding-bottom: 5px;
-        }
-
-        .bg-1 {
-            grid-area: 3 / 1 / -1 / span 4;
-            justify-self: end;
+            justify-self: start;
+            text-align: start;
+            max-width: unset;
+            @include body-1();
         }
 
         .bg-2 {
-            grid-area: 2 / 1 / -1 / -1;
-            content: url('images/bg-pattern-home-1.svg');
-            align-self: start;
-            justify-self: start;
-            margin-inline-start: -100px;
-        }
-
-        .bg-3 {
+            display: unset;
             grid-area: 2 / 4;
-            @include stripe(var(--secondary-1));
             align-self: start;
             justify-self: start;
+            @include stripe(var(--primary-2));
         }
     }
 }

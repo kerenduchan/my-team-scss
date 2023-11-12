@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 import { createDivs } from '../util'
 
-export function GetStartedSection() {
+export function GetStarted() {
     const navigate = useNavigate()
 
     function onContactUsClick() {
@@ -9,7 +9,7 @@ export function GetStartedSection() {
     }
 
     return (
-        <section className="get-started-section bg-primary-2">
+        <section className="get-started bg-primary-2">
             <h2>Ready to get started?</h2>
             <button onClick={onContactUsClick}>contact us</button>
 

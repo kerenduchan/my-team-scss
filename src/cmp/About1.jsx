@@ -1,8 +1,8 @@
 import { createDivs } from '../util'
 
-export function AboutSection1() {
+export function About1() {
     return (
-        <section className="about-section-1">
+        <section className="about-1">
             <h1>About</h1>
             <article>
                 We help companies build dynamic teams made up of top global

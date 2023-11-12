@@ -1,6 +1,6 @@
-.home-section-2 {
+.home-2 {
     display: grid;
-    @include section-gtc-narrow();
+    @include gtc-narrow();
     grid-template-rows: 64px auto 32px auto 56px auto 64px;
 
     & > h2 {
@@ -49,7 +49,7 @@
 
     // tablet
     @include for-normal-layout() {
-        @include section-gtc-normal();
+        @include gtc-normal();
         grid-template-rows: 100px auto 32px auto 64px auto 100px;
 
         & > h2 {

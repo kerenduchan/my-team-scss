@@ -1,6 +1,6 @@
 import { createDivs } from '../util'
 
-export function HomeSection3() {
+export function Home3() {
     const successStories = [
         {
             id: 1,
@@ -23,7 +23,7 @@ export function HomeSection3() {
     ]
 
     return (
-        <section className="home-section-3 bg-secondary-3">
+        <section className="home-3 bg-secondary-3">
             <h2>
                 Delivering real results for top companies. Some of our{' '}
                 <mark className="secondary-1">success stories.</mark>

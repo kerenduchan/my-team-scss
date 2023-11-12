@@ -12,23 +12,23 @@
     }
 }
 
-@mixin section-gtc($margin-x, $center-column: auto) {
+@mixin gtc($margin-x, $center-column: auto) {
     grid-template-columns:
         minmax($margin-x, 1fr)
         $center-column
         minmax($margin-x, 1fr);
 }
 
-@mixin section-gtc-narrow() {
-    @include section-gtc(var(--margin-x-narrow));
+@mixin gtc-narrow() {
+    @include gtc(var(--margin-x-narrow));
 }
 
-@mixin section-gtc-normal() {
-    @include section-gtc(var(--margin-x-normal));
+@mixin gtc-normal() {
+    @include gtc(var(--margin-x-normal));
 }
 
-@mixin section-gtc-wide() {
-    @include section-gtc(var(--margin-x-wide));
+@mixin gtc-wide() {
+    @include gtc(var(--margin-x-wide));
 }
 
 // layout mixins
