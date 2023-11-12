@@ -16,15 +16,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: auto;
-        margin-top: -18px;
-        gap: 20px;
-        max-width: 161px;
-        overflow: hidden;
-
-        li > img {
-            transform: scale(0.45);
-        }
+        gap: 52px;
     }
 
     .bg-1 {
@@ -32,5 +24,21 @@
         content: url('images/bg-pattern-about-4.svg');
         margin-top: -100px;
         margin-inline-start: -100px;
+    }
+
+    // tablet
+    @include for-normal-layout() {
+        grid-template-rows: 100px auto 48px auto 100px;
+
+        .bg-1 {
+            margin-inline-start: 0;
+        }
+
+        .clients {
+            flex-direction: row;
+            max-width: unset;
+            margin-top: unset;
+            justify-content: center;
+        }
     }
 }

@@ -20,7 +20,7 @@ export function About3() {
             <ul className="clients">
                 {clients.map((c) => (
                     <li key={c}>
-                        <img src={`images/logo-${c}.png`} />
+                        <img src={`images/logo-${c}.svg`} />
                     </li>
                 ))}
             </ul>
