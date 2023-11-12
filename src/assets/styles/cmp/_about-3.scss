@@ -1,0 +1,36 @@
+.about-3 {
+    display: grid;
+    @include gtc-narrow();
+    grid-template-rows: 88px auto 64px 360px 88px;
+    justify-content: center;
+    align-content: space-between;
+
+    h2 {
+        grid-area: 2 / 2;
+        @include font(32px, 32px);
+        text-align: center;
+    }
+
+    .clients {
+        grid-area: 4 / 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        margin-top: -18px;
+        gap: 20px;
+        max-width: 161px;
+        overflow: hidden;
+
+        li > img {
+            transform: scale(0.45);
+        }
+    }
+
+    .bg-1 {
+        grid-area: 1 / 1 / -1 / -1;
+        content: url('images/bg-pattern-about-4.svg');
+        margin-top: -100px;
+        margin-inline-start: -100px;
+    }
+}

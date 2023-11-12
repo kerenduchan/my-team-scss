@@ -12,23 +12,23 @@
     }
 }
 
-@mixin gtc($margin-x, $center-column: auto) {
+@mixin gtc($break, $margin-x) {
     grid-template-columns:
         minmax($margin-x, 1fr)
-        $center-column
+        minmax(auto, calc($break - 2 * $margin-x))
         minmax($margin-x, 1fr);
 }
 
 @mixin gtc-narrow() {
-    @include gtc(var(--margin-x-narrow));
+    @include gtc($break-narrow, var(--margin-x-narrow));
 }
 
 @mixin gtc-normal() {
-    @include gtc(var(--margin-x-normal));
+    @include gtc($break-normal, var(--margin-x-normal));
 }
 
 @mixin gtc-wide() {
-    @include gtc(var(--margin-x-wide));
+    @include gtc($break-wide, var(--margin-x-wide));
 }
 
 // layout mixins
