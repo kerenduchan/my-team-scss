@@ -6,7 +6,7 @@ Irvine, CA
 California 92714
 Call Us : 949-833-7432`
 
-    const social = ['facebook', 'pinterest', 'twitter']
+    const socials = ['facebook', 'pinterest', 'twitter']
 
     return (
         <footer className="bg-secondary-5">
@@ -14,8 +14,8 @@ Call Us : 949-833-7432`
             <Nav />
             <address>{address}</address>
             <ul>
-                {social.map((s) => (
-                    <li>
+                {socials.map((s) => (
+                    <li key={s}>
                         <a key={s} className={s} />
                     </li>
                 ))}

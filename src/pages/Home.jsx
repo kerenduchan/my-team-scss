@@ -5,7 +5,7 @@ import { GetStartedSection } from '../cmp/GetStartedSection'
 
 export function Home() {
     return (
-        <div className="home">
+        <div id="home">
             <HomeSection1 />
             <HomeSection2 />
             <HomeSection3 />

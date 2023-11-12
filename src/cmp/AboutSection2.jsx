@@ -9,14 +9,14 @@ export function AboutSection2() {
         { name: 'Griffin Wise', avatar: 'images/avatar-griffin.jpg' },
     ]
 
-    const social = ['twitter', 'linkedin']
+    const socials = ['twitter', 'linkedin']
 
     return (
         <section className="about-section-2 bg-secondary-3">
             <h2>Meet the directors</h2>
             <ul className="directors">
                 {directors.map((d) => (
-                    <li className="bg-secondary-4">
+                    <li key={d.name} className="bg-secondary-4">
                         <Director name={d.name} avatar={d.avatar} />
                     </li>
                 ))}
@@ -30,8 +30,8 @@ export function AboutSection2() {
                 </blockquote>
 
                 <ul className="social">
-                    {social.map((s) => (
-                        <li>
+                    {socials.map((s) => (
+                        <li key={s}>
                             <a key={s} className={s} />
                         </li>
                     ))}
