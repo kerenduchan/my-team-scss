@@ -52,7 +52,7 @@ export function HomeSection3() {
 function SuccessStory({ name, avatar, text }) {
     return (
         <>
-            <blockquote className="text body-2">“{text}”</blockquote>
+            <blockquote className="text body-2">{text}</blockquote>
             <h3 className="secondary-1">{name}</h3>
             <img className="avatar" src={avatar} />
         </>

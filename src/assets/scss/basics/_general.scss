@@ -29,6 +29,14 @@ mark {
     background-color: transparent;
 }
 
+blockquote::before {
+    content: '“';
+}
+
+blockquote::after {
+    content: '”';
+}
+
 ul {
     list-style-type: none;
     margin: 0;

@@ -25,8 +25,8 @@ export function AboutSection2() {
             <div className="quote-box bg-secondary-5">
                 <h3 className="secondary-1">Aden Allen</h3>
                 <blockquote>
-                    “Empowered teams create truly amazing products. Set the
-                    north star and let them follow it.”
+                    Empowered teams create truly amazing products. Set the north
+                    star and let them follow it.
                 </blockquote>
 
                 <ul className="social">
