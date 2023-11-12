@@ -28,7 +28,7 @@
 
     // tablet
     @include for-normal-layout() {
-        grid-template-rows: 100px auto 48px auto 100px;
+        grid-template-rows: 100px auto 48px auto 96px;
 
         .bg-1 {
             margin-inline-start: 0;
@@ -39,6 +39,18 @@
             max-width: unset;
             margin-top: unset;
             justify-content: center;
+
+            :nth-child(5) {
+                min-width: 61px;
+            }
+
+            & > li {
+                min-width: 100px;
+
+                img {
+                    width: 100%;
+                }
+            }
         }
     }
 }
