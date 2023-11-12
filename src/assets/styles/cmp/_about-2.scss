@@ -93,4 +93,25 @@
         justify-self: end;
         content: url('images/bg-pattern-home-4-about-3.svg');
     }
+
+    // tablet
+    @include for-normal-layout() {
+        grid-template-rows: 100px auto 48px auto 128px;
+
+        .bg-1 {
+            margin-top: 0px;
+        }
+
+        .directors {
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            column-gap: 11px;
+            row-gap: 76px;
+            justify-content: center;
+
+            li {
+                width: 281px;
+            }
+        }
+    }
 }
