@@ -19,28 +19,37 @@
     }
 }
 
-.circle-button {
-    border-radius: 50%;
-    border: none;
-    width: 56px;
-    height: 56px;
+// button variants
+
+button {
+    &.btn-pill {
+        box-sizing: border-box;
+        height: $btn-pill-height;
+        width: 153px;
+        border-radius: calc($btn-pill-height / 2);
+        text-align: center;
+        @include body-1();
+        @include button-colors(var(--primary-1), var(--secondary-5));
+    }
+
+    &.btn-circle {
+        border-radius: 50%;
+        width: 56px;
+        height: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &.btn-icon {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 20px;
+        height: 20px;
+    }
 }
 
-.icon-btn {
-    border-width: 0px;
-    border-radius: unset;
-    background-color: transparent;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 20px;
-    height: 20px;
-}
-
-.icon-btn:hover {
-    background-color: transparent;
-    color: unset;
-}
 @each $s in $socials {
     .#{$s} {
         display: inline-block;

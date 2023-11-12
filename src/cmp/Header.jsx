@@ -16,10 +16,10 @@ export function Header({ onOpenMenu }) {
         <header className="bg-primary-3">
             <img className="logo" src="images/logo.svg" alt="myteam" />
             <Nav onLinkClick={onLinkClick} />
-            <button className="contact-us" onClick={onContactUsClick}>
+            <button className="btn-pill contact-us" onClick={onContactUsClick}>
                 contact us
             </button>
-            <button className="icon-btn hamburger" onClick={onOpenMenu} />
+            <button className="icon hamburger" onClick={onOpenMenu} />
         </header>
     )
 }

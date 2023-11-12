@@ -13,7 +13,7 @@
         border-radius: 50%;
     }
 
-    .circle-button {
+    .btn-circle {
         grid-area: 4 / 1;
         align-self: end;
         margin: -28px;
@@ -45,7 +45,7 @@
         display: none;
     }
 
-    .circle-button {
+    .btn-circle {
         transform: rotateY(0deg) rotate(45deg);
         background-color: var(--secondary-1);
     }

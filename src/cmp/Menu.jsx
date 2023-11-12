@@ -18,9 +18,9 @@ export function Menu({ isOpen, onClose }) {
         <menu id="main-menu" className={isOpen ? '' : 'closed'}>
             <div className="overlay" />
             <div className="content">
-                <button className="icon-btn close-btn" onClick={onClose} />
+                <button className="btn-icon close-btn" onClick={onClose} />
                 <Nav onLinkClick={onLinkClick} />
-                <button className="contact-us" onClick={onContactUsClick}>
+                <button className="btn-pill contact-us" onClick={onContactUsClick}>
                     contact us
                 </button>
 

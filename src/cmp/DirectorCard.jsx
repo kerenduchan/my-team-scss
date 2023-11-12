@@ -21,10 +21,7 @@ export function DirectorCard({ director }) {
                 ))}
             </ul>
 
-            <button
-                className="circle-button"
-                onClick={() => setIsOpen(!isOpen)}
-            >
+            <button className="btn-circle" onClick={() => setIsOpen(!isOpen)}>
                 <img
                     src="images/icon-cross.svg"
                     alt={isOpen ? 'open' : 'close'}

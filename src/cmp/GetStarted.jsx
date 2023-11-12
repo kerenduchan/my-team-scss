@@ -11,7 +11,9 @@ export function GetStarted() {
     return (
         <section className="get-started bg-primary-2">
             <h2>Ready to get started?</h2>
-            <button onClick={onContactUsClick}>contact us</button>
+            <button className="btn-pill" onClick={onContactUsClick}>
+                contact us
+            </button>
 
             {
                 /* for bg images, will be filled in css */

@@ -84,14 +84,12 @@ h3 {
     @include h3();
 }
 
-$button-height: 48px;
-
 button {
-    box-sizing: border-box;
-    height: $button-height;
-    width: 153px;
-    border-radius: calc($button-height / 2);
-    text-align: center;
-    @include body-1();
-    @include button-colors(var(--primary-1), var(--secondary-5));
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+a {
+    cursor: pointer;
 }
