@@ -2,6 +2,7 @@ header {
     position: fixed;
     display: grid;
     width: 100%;
+    z-index: 1;
 
     grid-template-columns:
         var(--margin-x-narrow)
