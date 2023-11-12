@@ -15,7 +15,9 @@ Call Us : 949-833-7432`
             <address>{address}</address>
             <ul>
                 {social.map((s) => (
-                    <a key={s} className={s} />
+                    <li>
+                        <a key={s} className={s} />
+                    </li>
                 ))}
             </ul>
 

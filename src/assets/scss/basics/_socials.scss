@@ -1,11 +1,9 @@
-$socials: facebook, pinterest, twitter;
+$socials: facebook, pinterest, twitter, linkedin;
 
 @each $s in $socials {
     .#{$s} {
-        width: 24px;
-        aspect-ratio: 1/1;
-        background-image: url('images/icon-#{$s}.svg');
-        background-position: center center;
-        background-repeat: no-repeat;
+        display: inline-block;
+        content: url('images/icon-#{$s}.svg');
+        margin-bottom: -4px;
     }
 }

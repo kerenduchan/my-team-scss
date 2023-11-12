@@ -10,7 +10,7 @@
         @include font(32px, 32px);
     }
 
-    ul {
+    .directors {
         grid-area: 4 / 2;
         display: flex;
         flex-direction: column;
@@ -47,7 +47,7 @@
     .quote-box {
         grid-area: 6 / 2;
         display: grid;
-        grid-template-rows: 35px auto 8px auto 24px auto 63px;
+        grid-template-rows: 35px minmax(min-content, max-content) 8px auto 24px auto 63px;
         height: 253px;
         width: 100%;
         justify-items: center;
@@ -61,6 +61,13 @@
             @include body-2();
             max-width: 235px;
             text-align: center;
+        }
+
+        .social {
+            grid-area: 6 / 1;
+            display: flex;
+            gap: 16px;
+            align-items: center;
         }
 
         .circle-button {

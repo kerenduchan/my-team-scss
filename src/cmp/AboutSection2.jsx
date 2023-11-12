@@ -9,10 +9,12 @@ export function AboutSection2() {
         { name: 'Griffin Wise', avatar: 'images/avatar-griffin.jpg' },
     ]
 
+    const social = ['twitter', 'linkedin']
+
     return (
         <section className="about-section-2 bg-secondary-3">
             <h2>Meet the directors</h2>
-            <ul>
+            <ul className="directors">
                 {directors.map((d) => (
                     <li className="bg-secondary-4">
                         <Director name={d.name} avatar={d.avatar} />
@@ -26,6 +28,15 @@ export function AboutSection2() {
                     “Empowered teams create truly amazing products. Set the
                     north star and let them follow it.”
                 </blockquote>
+
+                <ul className="social">
+                    {social.map((s) => (
+                        <li>
+                            <a key={s} className={s} />
+                        </li>
+                    ))}
+                </ul>
+
                 <button className="circle-button bg-secondary-1">
                     <img
                         src="images/icon-cross.svg"
