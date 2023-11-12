@@ -1,7 +1,7 @@
 .about-2 {
     display: grid;
     grid-template-columns: var(--margin-x-narrow) 1fr var(--margin-x-narrow);
-    grid-template-rows: 88px auto 48px auto 52px auto 116px;
+    grid-template-rows: 88px auto 48px auto 116px;
     justify-items: center;
 
     h2 {
@@ -16,65 +16,47 @@
         flex-direction: column;
         gap: 52px;
         width: 100%;
-
-        li {
-            display: grid;
-            grid-template-rows: 32px minmax(min-content, max-content) 16px auto;
-            height: 253px;
-            justify-items: center;
-
-            .avatar {
-                grid-area: 2 / 1;
-                height: 96px;
-                aspect-ratio: 1 / 1;
-                outline: 2px solid #c4fffe;
-                border-radius: 50%;
-            }
-
-            .circle-button {
-                grid-area: -1 / 1;
-                align-self: end;
-                margin: -28px;
-                background-color: var(--primary-2);
-            }
-
-            h3 {
-                grid-area: 4 / 1;
-            }
-        }
     }
 
-    .quote-box {
-        grid-area: 6 / 2;
+    .director {
         display: grid;
-        grid-template-rows: 35px minmax(min-content, max-content) 8px auto 24px auto 63px;
+        grid-template-rows: 32px minmax(min-content, max-content) 16px auto;
         height: 253px;
-        width: 100%;
         justify-items: center;
+        background-color: var(--secondary-4);
 
-        h3 {
+        .avatar {
             grid-area: 2 / 1;
-        }
-
-        blockquote {
-            grid-area: 4 / 1;
-            @include body-2();
-            max-width: 235px;
-            text-align: center;
-        }
-
-        .social {
-            grid-area: 6 / 1;
-            display: flex;
-            gap: 16px;
-            align-items: center;
+            height: 96px;
+            aspect-ratio: 1 / 1;
+            outline: 2px solid #c4fffe;
+            border-radius: 50%;
         }
 
         .circle-button {
             grid-area: -1 / 1;
             align-self: end;
             margin: -28px;
+            background-color: var(--primary-2);
+            color: var(--secondary-4);
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        h3 {
+            grid-area: 4 / 1;
+            color: var(--secondary-1);
+        }
+    }
+
+    .director.open {
+        background-color: var(--secondary-5);
+        .avatar {
+            display: none;
+        }
+
+        .circle-button {
             transform: rotateY(0deg) rotate(45deg);
+            background-color: var(--secondary-1);
         }
     }
 

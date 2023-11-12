@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { createDivs } from '../util'
 
 export function About2() {
@@ -7,6 +8,7 @@ export function About2() {
         { name: 'Cruz Hamer', avatar: 'images/avatar-cruz.jpg' },
         { name: 'Drake Heaton', avatar: 'images/avatar-drake.jpg' },
         { name: 'Griffin Wise', avatar: 'images/avatar-griffin.jpg' },
+        { name: 'Aden Allen', avatar: 'images/avatar-griffin.jpg' },
     ]
 
     const socials = ['twitter', 'linkedin']
@@ -16,35 +18,11 @@ export function About2() {
             <h2>Meet the directors</h2>
             <ul className="directors">
                 {directors.map((d) => (
-                    <li key={d.name} className="bg-secondary-4">
-                        <Director name={d.name} avatar={d.avatar} />
+                    <li key={d.name}>
+                        <Director director={d} />
                     </li>
                 ))}
             </ul>
-
-            <div className="quote-box bg-secondary-5">
-                <h3 className="secondary-1">Aden Allen</h3>
-                <blockquote>
-                    Empowered teams create truly amazing products. Set the north
-                    star and let them follow it.
-                </blockquote>
-
-                <ul className="social">
-                    {socials.map((s) => (
-                        <li key={s}>
-                            <a key={s} className={s} />
-                        </li>
-                    ))}
-                </ul>
-
-                <button className="circle-button bg-secondary-1">
-                    <img
-                        src="images/icon-cross.svg"
-                        alt="close"
-                        className="secondary-4"
-                    />
-                </button>
-            </div>
 
             {
                 /* for bg images, will be filled in css */
@@ -54,18 +32,21 @@ export function About2() {
     )
 }
 
-function Director({ name, avatar }) {
+function Director({ director }) {
+    const { name, avatar } = director
+
+    const [isOpen, setIsOpen] = useState(false)
+
     return (
-        <>
-            <h3 className="secondary-1">{name}</h3>
+        <div className={`director ${isOpen ? 'open' : ''}`}>
+            <h3>{name}</h3>
             <img className="avatar" src={avatar} />
-            <button className="circle-button">
-                <img
-                    src="images/icon-cross.svg"
-                    alt="more"
-                    className="secondary-4"
-                />
+            <button
+                className="circle-button"
+                onClick={() => setIsOpen(!isOpen)}
+            >
+                <img src="images/icon-cross.svg" alt="more" />
             </button>
-        </>
+        </div>
     )
 }
