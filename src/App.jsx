@@ -1,15 +1,30 @@
+import { useState } from 'react'
 import { Route, HashRouter as Router, Routes } from 'react-router-dom'
 import { Header } from './cmp/Header'
 import { Footer } from './cmp/Footer'
 import { Home } from './pages/Home'
 import { About } from './pages/About'
 import { Contact } from './pages/Contact'
+import { Menu } from './cmp/Menu'
 
 function App() {
+    const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+    function onOpenMenu() {
+        console.log('on open')
+        setIsMenuOpen(true)
+    }
+
+    function onCloseMenu() {
+        console.log('on close')
+        setIsMenuOpen(false)
+    }
+
     return (
         <main id="app">
             <Router>
-                <Header />
+                <Menu isOpen={isMenuOpen} onClose={onCloseMenu} />
+                <Header onOpenMenu={onOpenMenu} />
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />

@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 import { Nav } from './Nav'
 
-export function Header() {
+export function Header({ onOpenMenu }) {
     const navigate = useNavigate()
 
     function onContactUsClick() {
@@ -15,7 +15,7 @@ export function Header() {
             <button className="contact-us" onClick={onContactUsClick}>
                 contact us
             </button>
-            <img src="images/icon-hamburger.svg" className="hamburger" />
+            <button className="icon-btn hamburger" onClick={onOpenMenu} />
         </header>
     )
 }
