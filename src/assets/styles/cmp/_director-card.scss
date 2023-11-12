@@ -1,0 +1,41 @@
+.director {
+    display: grid;
+    grid-template-rows: 32px minmax(min-content, max-content) 16px auto;
+    height: 253px;
+    justify-items: center;
+    background-color: var(--secondary-4);
+
+    .avatar {
+        grid-area: 2 / 1;
+        height: 96px;
+        aspect-ratio: 1 / 1;
+        outline: 2px solid #c4fffe;
+        border-radius: 50%;
+    }
+
+    .circle-button {
+        grid-area: -1 / 1;
+        align-self: end;
+        margin: -28px;
+        background-color: var(--primary-2);
+        color: var(--secondary-4);
+        transition: transform 0.2s, background-color 0.2s;
+    }
+
+    h3 {
+        grid-area: 4 / 1;
+        color: var(--secondary-1);
+    }
+}
+
+.director.open {
+    background-color: var(--secondary-5);
+    .avatar {
+        display: none;
+    }
+
+    .circle-button {
+        transform: rotateY(0deg) rotate(45deg);
+        background-color: var(--secondary-1);
+    }
+}

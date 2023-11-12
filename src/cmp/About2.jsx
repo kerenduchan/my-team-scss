@@ -1,5 +1,5 @@
-import { useState } from 'react'
 import { createDivs } from '../util'
+import { DirectorCard } from './DirectorCard'
 
 export function About2() {
     const directors = [
@@ -19,7 +19,7 @@ export function About2() {
             <ul className="directors">
                 {directors.map((d) => (
                     <li key={d.name}>
-                        <Director director={d} />
+                        <DirectorCard director={d} />
                     </li>
                 ))}
             </ul>
@@ -29,24 +29,5 @@ export function About2() {
                 createDivs(2)
             }
         </section>
-    )
-}
-
-function Director({ director }) {
-    const { name, avatar } = director
-
-    const [isOpen, setIsOpen] = useState(false)
-
-    return (
-        <div className={`director ${isOpen ? 'open' : ''}`}>
-            <h3>{name}</h3>
-            <img className="avatar" src={avatar} />
-            <button
-                className="circle-button"
-                onClick={() => setIsOpen(!isOpen)}
-            >
-                <img src="images/icon-cross.svg" alt="more" />
-            </button>
-        </div>
     )
 }
