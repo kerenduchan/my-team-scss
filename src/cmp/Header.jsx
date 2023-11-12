@@ -19,7 +19,7 @@ export function Header({ onOpenMenu }) {
             <button className="btn-pill contact-us" onClick={onContactUsClick}>
                 contact us
             </button>
-            <button className="icon hamburger" onClick={onOpenMenu} />
+            <button className="btn-icon hamburger" onClick={onOpenMenu} />
         </header>
     )
 }
