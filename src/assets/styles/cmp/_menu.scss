@@ -1,12 +1,12 @@
 #main-menu {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 2;
     display: flex;
     justify-content: end;
 
     .overlay {
-        position: fixed;
-        min-width: 100%;
-        min-height: 100%;
-        z-index: 2;
         opacity: 50%;
         background-color: black;
         min-width: 100%;
