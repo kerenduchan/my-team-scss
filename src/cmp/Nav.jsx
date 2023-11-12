@@ -1,6 +1,4 @@
-import { Link } from 'react-router-dom'
-
-export function Nav() {
+export function Nav({ onLinkClick }) {
     const pages = [
         { name: 'home', link: '/' },
         { name: 'about', link: '/about' },
@@ -9,9 +7,9 @@ export function Nav() {
     return (
         <nav>
             {pages.map((p) => (
-                <Link key={p.name} to={p.link}>
+                <a key={p.name} onClick={() => onLinkClick(p.link)}>
                     {p.name}
-                </Link>
+                </a>
             ))}
         </nav>
     )

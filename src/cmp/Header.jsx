@@ -8,10 +8,14 @@ export function Header({ onOpenMenu }) {
         navigate('/contact')
     }
 
+    function onLinkClick(link) {
+        navigate(link)
+    }
+
     return (
         <header className="bg-primary-3">
             <img className="logo" src="images/logo.svg" alt="myteam" />
-            <Nav />
+            <Nav onLinkClick={onLinkClick} />
             <button className="contact-us" onClick={onContactUsClick}>
                 contact us
             </button>
