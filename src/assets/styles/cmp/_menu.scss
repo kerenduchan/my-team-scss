@@ -16,7 +16,7 @@
     .content {
         display: grid;
         grid-template-columns: 48px 1fr 25px;
-        grid-template-rows: 56px 56px auto 36px;
+        grid-template-rows: 56px 56px 116px 1fr;
         min-width: 255px;
         background-color: var(--secondary-2);
         transition: margin-inline-end 0.2s;
@@ -41,6 +41,11 @@
             flex-direction: column;
             gap: 24px;
             @include body-1();
+        }
+
+        .contact-us {
+            grid-area: 4 / 2;
+            background-color: transparent;
         }
 
         .bg-1 {
