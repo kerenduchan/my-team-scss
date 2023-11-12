@@ -2,7 +2,7 @@
     display: grid;
     @include gtc-narrow();
     grid-template-rows: 160px auto 16px auto 108px;
-    justify-content: center;
+    justify-items: center;
 
     h1 {
         grid-area: 2 / 2;
