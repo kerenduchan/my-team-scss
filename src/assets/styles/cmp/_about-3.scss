@@ -36,8 +36,6 @@
 
         .clients {
             flex-direction: row;
-            max-width: unset;
-            margin-top: unset;
             justify-content: center;
 
             :nth-child(5) {
@@ -51,6 +49,20 @@
                     width: 100%;
                 }
             }
+        }
+    }
+
+    // desktop
+    @include for-wide-layout() {
+        @include gtc-wide();
+        grid-template-rows: 140px auto 64px auto 140px;
+
+        .bg-1 {
+            margin-top: unset;
+        }
+
+        h2 {
+            @include h2();
         }
     }
 }
