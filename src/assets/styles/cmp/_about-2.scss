@@ -49,7 +49,7 @@
             row-gap: 76px;
             justify-content: center;
 
-            li {
+            & > li {
                 width: 281px;
             }
         }
