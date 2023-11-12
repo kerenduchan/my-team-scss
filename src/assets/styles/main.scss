@@ -4,11 +4,9 @@
 @import 'setup/mixins';
 @import 'setup/functions';
 
-@import 'basics/general';
-@import 'basics/layout';
-@import 'basics/colors';
-@import 'basics/socials';
-@import 'basics/misc';
+@import 'base/base';
+@import 'base/helpers';
+@import 'base/layout';
 
 @import 'cmp/header';
 @import 'cmp/footer';

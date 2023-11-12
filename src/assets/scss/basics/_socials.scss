@@ -1,9 +1,0 @@
-$socials: facebook, pinterest, twitter, linkedin;
-
-@each $s in $socials {
-    .#{$s} {
-        display: inline-block;
-        content: url('images/icon-#{$s}.svg');
-        margin-bottom: -4px;
-    }
-}
