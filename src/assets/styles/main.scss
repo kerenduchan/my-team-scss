@@ -4,10 +4,12 @@
 @import 'setup/mixins';
 @import 'setup/functions';
 
+// BASE
 @import 'base/base';
 @import 'base/helpers';
 @import 'base/layout';
 
+// COMPONENTS
 @import 'cmp/header';
 @import 'cmp/menu';
 @import 'cmp/footer';
@@ -19,3 +21,5 @@
 @import 'cmp/about-2';
 @import 'cmp/about-3';
 @import 'cmp/director-card';
+@import 'cmp/contact-1';
+@import 'cmp/contact-2';
