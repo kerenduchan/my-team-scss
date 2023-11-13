@@ -976,20 +976,20 @@ footer .copyright {
   }
 }
 
-.about-1 {
+.about-preface {
   display: grid;
   grid-template-columns: minmax(var(--margin-x-narrow), 1fr) minmax(auto, calc(375px - 2 * var(--margin-x-narrow))) minmax(var(--margin-x-narrow), 1fr);
   grid-template-rows: 160px auto 16px auto 108px;
   justify-items: center;
 }
-.about-1 h1 {
+.about-preface h1 {
   grid-area: 2/2;
   font-family: var(--bold-font);
   font-size: 40px;
   line-height: 40px;
   text-align: center;
 }
-.about-1 article {
+.about-preface article {
   grid-area: 4/2;
   font-family: var(--semi-bold-font);
   font-size: 15px;
@@ -997,7 +997,7 @@ footer .copyright {
   text-align: center;
   max-width: 500px;
 }
-.about-1 .bg-1 {
+.about-preface .bg-1 {
   grid-area: 1/1/-1/-1;
   align-self: end;
   justify-self: end;
@@ -1005,32 +1005,32 @@ footer .copyright {
   margin-bottom: -100px;
   margin-inline-end: -100px;
 }
-.about-1 .bg-2 {
+.about-preface .bg-2 {
   display: none;
 }
 @media (min-width: 768px) {
-  .about-1 {
+  .about-preface {
     grid-template-columns: minmax(var(--margin-x-normal), 1fr) minmax(auto, calc(768px - 2 * var(--margin-x-normal))) minmax(var(--margin-x-normal), 1fr);
     grid-template-rows: 224px auto 24px auto 112px;
   }
-  .about-1 h1 {
+  .about-preface h1 {
     font-family: var(--bold-font);
     font-size: 64px;
     line-height: 56px;
   }
-  .about-1 article {
+  .about-preface article {
     max-width: 457px;
   }
-  .about-1 .bg-1 {
+  .about-preface .bg-1 {
     margin-bottom: 0px;
   }
 }
 @media (min-width: 1440px) {
-  .about-1 {
+  .about-preface {
     grid-template-columns: minmax(var(--margin-x-wide), 1fr) 350px 30px 730px minmax(var(--margin-x-wide), 1fr);
     grid-template-rows: 241px 156px 120px;
   }
-  .about-1 h1 {
+  .about-preface h1 {
     grid-area: 2/2;
     align-self: start;
     justify-self: start;
@@ -1039,7 +1039,7 @@ footer .copyright {
     line-height: 100px;
     text-align: start;
   }
-  .about-1 article {
+  .about-preface article {
     grid-area: 2/4;
     align-self: end;
     justify-self: start;
@@ -1049,7 +1049,7 @@ footer .copyright {
     font-size: 18px;
     line-height: 28px;
   }
-  .about-1 .bg-2 {
+  .about-preface .bg-2 {
     display: unset;
     grid-area: 2/4;
     align-self: start;
@@ -1060,27 +1060,27 @@ footer .copyright {
   }
 }
 
-.about-2 {
+.about-directors {
   display: grid;
   grid-template-columns: var(--margin-x-narrow) 1fr var(--margin-x-narrow);
   grid-template-rows: 88px auto 48px auto 116px;
   justify-items: center;
 }
-.about-2 h2 {
+.about-directors h2 {
   grid-area: 2/2;
   text-align: center;
   font-family: var(--bold-font);
   font-size: 32px;
   line-height: 32px;
 }
-.about-2 .directors {
+.about-directors .directors {
   grid-area: 4/2;
   display: flex;
   flex-direction: column;
   gap: 52px;
   width: 100%;
 }
-.about-2 .bg-1 {
+.about-directors .bg-1 {
   grid-area: 1/1/-1/-1;
   align-self: start;
   justify-self: start;
@@ -1088,109 +1088,109 @@ footer .copyright {
   margin-top: -100px;
   margin-inline-start: -100px;
 }
-.about-2 .bg-2 {
+.about-directors .bg-2 {
   grid-area: 1/1/-1/-1;
   align-self: end;
   justify-self: end;
   content: url("images/bg-pattern-home-4-about-3.svg");
 }
 @media (min-width: 768px) {
-  .about-2 {
+  .about-directors {
     grid-template-rows: 100px auto 48px auto 128px;
   }
-  .about-2 .bg-1 {
+  .about-directors .bg-1 {
     margin-top: 0px;
   }
-  .about-2 .directors {
+  .about-directors .directors {
     display: grid;
     grid-template-columns: repeat(2, auto);
     column-gap: 11px;
     row-gap: 76px;
     justify-content: center;
   }
-  .about-2 .directors > li {
+  .about-directors .directors > li {
     width: 281px;
   }
 }
 @media (min-width: 1440px) {
-  .about-2 {
+  .about-directors {
     grid-template-columns: minmax(var(--margin-x-wide), 1fr) minmax(auto, calc(1440px - 2 * var(--margin-x-wide))) minmax(var(--margin-x-wide), 1fr);
     grid-template-rows: 140px auto 64px auto 168px;
   }
-  .about-2 h2 {
+  .about-directors h2 {
     font-family: var(--bold-font);
     font-size: 48px;
     line-height: 48px;
   }
-  .about-2 .directors {
+  .about-directors .directors {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 30px;
   }
-  .about-2 .directors > li {
+  .about-directors .directors > li {
     width: 100%;
   }
 }
 
-.about-3 {
+.about-clients {
   display: grid;
   grid-template-columns: minmax(var(--margin-x-narrow), 1fr) minmax(auto, calc(375px - 2 * var(--margin-x-narrow))) minmax(var(--margin-x-narrow), 1fr);
   grid-template-rows: 88px auto 64px 360px 88px;
   justify-content: center;
   align-content: space-between;
 }
-.about-3 h2 {
+.about-clients h2 {
   grid-area: 2/2;
   font-family: var(--bold-font);
   font-size: 32px;
   line-height: 32px;
   text-align: center;
 }
-.about-3 .clients {
+.about-clients .clients {
   grid-area: 4/2;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 52px;
 }
-.about-3 .bg-1 {
+.about-clients .bg-1 {
   grid-area: 1/1/-1/-1;
   content: url("images/bg-pattern-about-4.svg");
   margin-top: -100px;
   margin-inline-start: -100px;
 }
 @media (min-width: 768px) {
-  .about-3 {
+  .about-clients {
     grid-template-rows: 100px auto 48px auto 96px;
   }
-  .about-3 .bg-1 {
+  .about-clients .bg-1 {
     margin-inline-start: 0;
   }
-  .about-3 .clients {
+  .about-clients .clients {
     flex-direction: row;
     justify-content: center;
   }
-  .about-3 .clients :nth-child(5) {
+  .about-clients .clients :nth-child(5) {
     min-width: 61px;
   }
-  .about-3 .clients > li {
+  .about-clients .clients > li {
     min-width: 100px;
   }
-  .about-3 .clients > li img {
+  .about-clients .clients > li img {
     width: 100%;
   }
 }
 @media (min-width: 1440px) {
-  .about-3 {
+  .about-clients {
     grid-template-columns: minmax(var(--margin-x-wide), 1fr) minmax(auto, calc(1440px - 2 * var(--margin-x-wide))) minmax(var(--margin-x-wide), 1fr);
     grid-template-rows: 140px auto 64px auto 140px;
   }
-  .about-3 .bg-1 {
+  .about-clients .bg-1 {
     margin-top: unset;
   }
-  .about-3 .clients {
+  .about-clients .clients {
     gap: 100px;
   }
-  .about-3 h2 {
+  .about-clients h2 {
     font-family: var(--bold-font);
     font-size: 48px;
     line-height: 48px;

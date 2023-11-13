@@ -1,6 +1,6 @@
 import { createDivs } from '../util'
 
-export function About3() {
+export function AboutClients() {
     const clients = [
         'the-verge',
         'jakarta-post',
@@ -10,7 +10,7 @@ export function About3() {
     ]
 
     return (
-        <section className="about-3 bg-secondary-4">
+        <section className="about-clients bg-secondary-4">
             <h2>Some of our clients</h2>
             {
                 /* for bg images, will be filled in css */
