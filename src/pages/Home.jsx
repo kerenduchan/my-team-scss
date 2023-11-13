@@ -1,6 +1,6 @@
-import { Home1 } from '../cmp/Home1'
-import { Home2 } from '../cmp/Home2'
-import { Home3 } from '../cmp/Home3'
+import { HomePreface } from '../cmp/HomePreface'
+import { HomeStrengths } from '../cmp/HomeStrengths'
+import { HomeStories } from '../cmp/HomeStories'
 import { GetStarted } from '../cmp/GetStarted'
 import { useEffect } from 'react'
 
@@ -11,9 +11,9 @@ export function Home() {
 
     return (
         <div id="home">
-            <Home1 />
-            <Home2 />
-            <Home3 />
+            <HomePreface />
+            <HomeStrengths />
+            <HomeStories />
             <GetStarted />
         </div>
     )

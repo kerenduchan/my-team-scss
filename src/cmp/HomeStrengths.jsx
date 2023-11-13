@@ -1,6 +1,6 @@
 import { createDivs } from '../util'
 
-export function Home2() {
+export function HomeStrengths() {
     const items = [
         {
             id: 1,
@@ -23,7 +23,7 @@ export function Home2() {
     ]
 
     return (
-        <section className="home-2 bg-secondary-4">
+        <section className="home-strengths bg-secondary-4">
             <h2>Build & manage distributed teams like no one else.</h2>
 
             <ul>

@@ -1,8 +1,8 @@
 import { createDivs } from '../util'
 
-export function Home1() {
+export function HomePreface() {
     return (
-        <section className="home-1 bg-primary-3">
+        <section className="home-preface bg-primary-3">
             <h1>
                 Find the
                 <br /> best <mark>talent</mark>
