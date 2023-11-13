@@ -9,27 +9,60 @@ export function ContactForm() {
         message: '',
     })
 
+    function onChange(ev, field) {
+        setDraft((prev) => ({ ...prev, [field]: ev.target.value }))
+    }
+
     return (
         <form>
-            <div className="form-field">
-                <input type="text" id="name"></input>
-                <label for="name">Name</label>
-            </div>
+            {/* name */}
+            <FormInputField
+                field="name"
+                label="Name"
+                value={draft.name}
+                onChange={onChange}
+            />
 
-            <div className="form-field">
-                <input type="email" id="email"></input>
-                <label for="email">Email Address</label>
-            </div>
+            {/* email */}
+            <FormInputField
+                field="email"
+                label="Email Address"
+                value={draft.email}
+                onChange={onChange}
+                type="email"
+            />
 
-            <div className="form-field">
-                <input type="text" id="company-name"></input>
-                <label for="company-name">Company Name</label>
-            </div>
+            {/* company name */}
+            <FormInputField
+                field="companyName"
+                label="Company Name"
+                value={draft.companyName}
+                onChange={onChange}
+            />
 
-            <div className="form-field">
-                <input type="text" id="title"></input>
-                <label for="title">Title</label>
-            </div>
+            {/* title */}
+            <FormInputField
+                field="title"
+                label="Title"
+                value={draft.title}
+                onChange={onChange}
+            />
         </form>
+    )
+}
+
+function FormInputField({ field, label, value, onChange, type = 'text' }) {
+    return (
+        <div className="form-field">
+            <label htmlFor={field} className={value == '' ? '' : 'hide'}>
+                {label}
+            </label>
+            <input
+                type={type}
+                id={field}
+                value={value}
+                onChange={(e) => onChange(e, field)}
+            />
+        </div>
     )
 }

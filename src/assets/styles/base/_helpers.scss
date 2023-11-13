@@ -57,3 +57,28 @@ button {
         margin-bottom: -4px;
     }
 }
+
+.form-field {
+    display: grid;
+    grid-template-rows: 42px;
+
+    input {
+        grid-area: 1 / 1;
+        border-bottom: 1px solid var(--primary-1);
+        @include body-2();
+        padding-bottom: 16px;
+        outline: none;
+    }
+
+    label {
+        grid-area: 1 / 1;
+        align-self: end;
+        @include body-2();
+        opacity: 0.6;
+        padding-bottom: 16px;
+    }
+}
+
+.hide {
+    visibility: hidden;
+}
