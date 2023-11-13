@@ -39,11 +39,13 @@ export function Contact() {
                 ))}
             </ul>
 
-            <ContactForm />
+            <section className="contact-form">
+                <ContactForm />
+            </section>
 
             {
                 /* for bg images, will be filled in css */
-                createDivs(1)
+                createDivs(2)
             }
         </div>
     )

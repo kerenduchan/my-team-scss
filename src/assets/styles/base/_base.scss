@@ -101,3 +101,21 @@ button {
 a {
     cursor: pointer;
 }
+
+input {
+    border-bottom: 1px solid var(--primary-1);
+    height: 42px;
+
+    &:focus {
+        outline: none;
+
+        & + label {
+            display: none; /* Hide the label when the input is in focus */
+        }
+    }
+}
+
+label {
+    @include body-2();
+    opacity: 0.6;
+}

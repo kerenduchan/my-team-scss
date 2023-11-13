@@ -1,0 +1,16 @@
+.contact-form > form {
+    display: grid;
+    row-gap: 24px;
+}
+
+.form-field {
+    display: grid;
+
+    label {
+        grid-area: 1 / 1;
+    }
+
+    input {
+        grid-area: 1 / 1;
+    }
+}
