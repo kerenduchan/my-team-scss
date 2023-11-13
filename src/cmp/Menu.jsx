@@ -15,12 +15,15 @@ export function Menu({ isOpen, onClose }) {
     }
 
     return (
-        <menu id="main-menu" className={isOpen ? '' : 'closed'}>
-            <div className="overlay" />
-            <div className="content">
+        <>
+            <div className={`overlay ${isOpen ? '' : 'closed'}`} />
+            <div className={`content ${isOpen ? '' : 'closed'}`}>
                 <button className="btn-icon close-btn" onClick={onClose} />
                 <Nav onLinkClick={onLinkClick} />
-                <button className="btn-pill contact-us" onClick={onContactUsClick}>
+                <button
+                    className="btn-pill contact-us"
+                    onClick={onContactUsClick}
+                >
                     contact us
                 </button>
 
@@ -29,6 +32,6 @@ export function Menu({ isOpen, onClose }) {
                     createDivs(1)
                 }
             </div>
-        </menu>
+        </>
     )
 }
