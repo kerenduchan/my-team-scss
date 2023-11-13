@@ -12,6 +12,14 @@
     text-indent: 0;
 }
 
+input,
+textarea,
+button,
+select,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
 body {
     display: flex;
     justify-content: center;
