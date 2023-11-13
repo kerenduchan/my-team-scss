@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-import { createDivs } from '../util'
+import { createDivs } from '../util/util'
 
 export function GetStarted() {
     const navigate = useNavigate()

@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router'
-import { createDivs } from '../util'
+import { createDivs } from '../util/util'
 import { Nav } from './Nav'
 
 export function Menu({ isOpen, onClose }) {

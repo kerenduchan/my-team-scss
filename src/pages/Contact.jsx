@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { ContactForm } from '../cmp/ContactForm'
-import { createDivs } from '../util'
+import { createDivs } from '../util/util'
 
 export function Contact() {
     useEffect(() => {

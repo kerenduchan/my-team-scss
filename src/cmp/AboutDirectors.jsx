@@ -1,5 +1,5 @@
 import { getDirectors } from '../services/director.service'
-import { createDivs } from '../util'
+import { createDivs } from '../util/util'
 import { DirectorCard } from './DirectorCard'
 
 export function AboutDirectors() {

@@ -1,4 +1,4 @@
-import { createDivs } from '../util'
+import { createDivs } from '../util/util'
 
 export function HomePreface() {
     return (
