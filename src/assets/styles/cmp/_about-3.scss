@@ -61,6 +61,10 @@
             margin-top: unset;
         }
 
+        .clients {
+            gap: 100px;
+        }
+
         h2 {
             @include h2();
         }
