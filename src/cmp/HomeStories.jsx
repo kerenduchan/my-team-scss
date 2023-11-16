@@ -49,6 +49,7 @@ export function HomeStories() {
 function SuccessStory({ name, avatar, text }) {
     return (
         <>
+            <img className="quote-img" src="images/icon-quotes.svg" />
             <blockquote className="text body-2">{text}</blockquote>
             <h3 className="secondary-1">{name}</h3>
             <img className="avatar" src={avatar} />
