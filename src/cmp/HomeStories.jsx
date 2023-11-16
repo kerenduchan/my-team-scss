@@ -1,5 +1,3 @@
-import { createDivs } from '../util/util'
-
 export function HomeStories() {
     const successStories = [
         {
@@ -41,10 +39,9 @@ export function HomeStories() {
                 ))}
             </ul>
 
-            {
-                /* for bg images, will be filled in css */
-                createDivs(2)
-            }
+            {/* bg images */}
+            <img className="bg-1" src="images/bg-pattern-home-4-about-3.svg" />
+            <img className="bg-2" src="images/bg-pattern-home-5.svg" />
         </section>
     )
 }

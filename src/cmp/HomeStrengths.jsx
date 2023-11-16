@@ -1,5 +1,3 @@
-import { createDivs } from '../util/util'
-
 export function HomeStrengths() {
     const items = [
         {
@@ -38,10 +36,9 @@ export function HomeStrengths() {
                 ))}
             </ul>
 
-            {
-                /* for bg images, will be filled in css */
-                createDivs(2)
-            }
+            {/* bg images */}
+            <img className="bg-1" src="images/bg-pattern-home-3.svg" />
+            <div className="bg-2" />
         </section>
     )
 }
