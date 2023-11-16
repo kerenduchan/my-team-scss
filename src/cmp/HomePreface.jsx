@@ -1,5 +1,3 @@
-import { createDivs } from '../util/util'
-
 export function HomePreface() {
     return (
         <section className="home-preface bg-primary-3">
@@ -13,10 +11,10 @@ export function HomePreface() {
                 global talent. We're about to change that.
             </article>
 
-            {
-                /* for bg images, will be filled in css */
-                createDivs(3)
-            }
+            {/* bg images */}
+            <img className="bg-1" src="images/bg-pattern-home-2.svg" />
+            <img className="bg-2" src="images/bg-pattern-home-1.svg" />
+            <div className="bg-3" />
         </section>
     )
 }
