@@ -17,7 +17,9 @@ export function Menu({ isOpen, onClose }) {
         <>
             <div className={`overlay ${isOpen ? '' : 'closed'}`} />
             <div className={`content ${isOpen ? '' : 'closed'}`}>
-                <button className="btn-icon close-btn" onClick={onClose} />
+                <button className="btn-icon close-btn" onClick={onClose}>
+                    <img src="images/icon-close.svg" alt="close" />
+                </button>
                 <Nav onLinkClick={onLinkClick} />
                 <button
                     className="btn-pill contact-us"
