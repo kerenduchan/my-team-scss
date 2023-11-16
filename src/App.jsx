@@ -30,6 +30,10 @@ function App() {
                 </Routes>
                 <Footer />
             </Router>
+
+            <div style={{ display: 'none' }}>
+                <img src="images/icon-facebook.svg" />
+            </div>
         </main>
     )
 }
