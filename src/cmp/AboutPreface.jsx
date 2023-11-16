@@ -1,5 +1,3 @@
-import { createDivs } from '../util/util'
-
 export function AboutPreface() {
     return (
         <section className="about-preface">
@@ -12,10 +10,12 @@ export function AboutPreface() {
                 teams to you.
             </article>
 
-            {
-                /* for bg images, will be filled in css */
-                createDivs(2)
-            }
+            {/* bg images */}
+            <img
+                className="bg-1"
+                src="images/bg-pattern-about-1-mobile-nav-1.svg"
+            />
+            <div className="bg-2" />
         </section>
     )
 }

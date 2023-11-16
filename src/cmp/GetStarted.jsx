@@ -1,5 +1,4 @@
 import { useNavigate } from 'react-router-dom'
-import { createDivs } from '../util/util'
 
 export function GetStarted() {
     const navigate = useNavigate()
@@ -15,10 +14,8 @@ export function GetStarted() {
                 contact us
             </button>
 
-            {
-                /* for bg images, will be filled in css */
-                createDivs(1)
-            }
+            {/* bg images */}
+            <img className="bg-1" src="images/bg-pattern-home-6-about-5.svg" />
         </section>
     )
 }

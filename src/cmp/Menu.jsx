@@ -1,5 +1,4 @@
 import { useNavigate } from 'react-router'
-import { createDivs } from '../util/util'
 import { Nav } from './Nav'
 
 export function Menu({ isOpen, onClose }) {
@@ -27,10 +26,11 @@ export function Menu({ isOpen, onClose }) {
                     contact us
                 </button>
 
-                {
-                    /* forbg images, will be filled in css */
-                    createDivs(1)
-                }
+                {/* bg image */}
+                <img
+                    className="bg-1"
+                    src="images/bg-pattern-about-1-mobile-nav-1.svg"
+                />
             </div>
         </>
     )

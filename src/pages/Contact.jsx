@@ -1,6 +1,5 @@
 import { useEffect } from 'react'
 import { ContactForm } from '../cmp/ContactForm'
-import { createDivs } from '../util/util'
 
 export function Contact() {
     useEffect(() => {
@@ -43,10 +42,12 @@ export function Contact() {
                 <ContactForm />
             </section>
 
-            {
-                /* for bg images, will be filled in css */
-                createDivs(2)
-            }
+            {/* bg images */}
+            <img
+                className="bg-1"
+                src="images/bg-pattern-about-2-contact-1.svg"
+            />
+            <img className="bg-2" src="images/bg-pattern-contact-2.svg" />
         </div>
     )
 }

@@ -1,5 +1,3 @@
-import { createDivs } from '../util/util'
-
 export function AboutClients() {
     const clients = [
         'the-verge',
@@ -12,10 +10,6 @@ export function AboutClients() {
     return (
         <section className="about-clients bg-secondary-4">
             <h2>Some of our clients</h2>
-            {
-                /* for bg images, will be filled in css */
-                createDivs(1)
-            }
 
             <ul className="clients">
                 {clients.map((c) => (
@@ -24,6 +18,9 @@ export function AboutClients() {
                     </li>
                 ))}
             </ul>
+
+            {/* bg images */}
+            <img className="bg-1" src="images/bg-pattern-about-4.svg" />
         </section>
     )
 }

@@ -1,5 +1,4 @@
 import { getDirectors } from '../services/director.service'
-import { createDivs } from '../util/util'
 import { DirectorCard } from './DirectorCard'
 
 export function AboutDirectors() {
@@ -16,10 +15,12 @@ export function AboutDirectors() {
                 ))}
             </ul>
 
-            {
-                /* for bg images, will be filled in css */
-                createDivs(2)
-            }
+            {/* bg images */}
+            <img
+                className="bg-1"
+                src="images/bg-pattern-about-2-contact-1.svg"
+            />
+            <img className="bg-2" src="images/bg-pattern-home-4-about-3.svg" />
         </section>
     )
 }
