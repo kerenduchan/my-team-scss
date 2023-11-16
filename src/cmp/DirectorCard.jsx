@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Icon } from './Icon'
 
 export function DirectorCard({ director }) {
     const { name, avatar, quote, socials } = director
@@ -16,7 +17,9 @@ export function DirectorCard({ director }) {
             <ul className="socials">
                 {socials.map((s) => (
                     <li key={s.id}>
-                        <a key={s.id} className={s.id} href={s.link} />
+                        <a key={s.id} href={s.link}>
+                            <Icon type={s.id} />
+                        </a>
                     </li>
                 ))}
             </ul>

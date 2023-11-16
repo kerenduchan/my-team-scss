@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router'
 import { Nav } from './Nav'
+import { Icon } from './Icon'
 
 export function Footer() {
     const navigate = useNavigate()
@@ -23,7 +24,9 @@ Call Us : 949-833-7432`
             <ul>
                 {socials.map((s) => (
                     <li key={s}>
-                        <a key={s} className={s} />
+                        <a key={s}>
+                            <Icon type={s} />
+                        </a>
                     </li>
                 ))}
             </ul>
